@@ -1,7 +1,8 @@
 "use client";
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiTypescript, SiMongodb, SiExpress, SiNextdotjs, SiVercel } from "react-icons/si";
 import { motion } from "framer-motion";
+import { IoLogoFirebase } from "react-icons/io5";
 
 const skills = [
   { id: 1, title: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
@@ -15,6 +16,8 @@ const skills = [
   { id: 9, title: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
   { id: 10, title: "Next.js", icon: <SiNextdotjs className="text-white" /> },
   { id: 11, title: "Vercel", icon: <SiVercel className="text-white" /> },
+  { id:12, title: "Firebase", icon: <IoLogoFirebase className="text-orange-400" />},
+  { id:13, title: "GitHub", icon: <FaGithub className="text-white" />},
 ];
 
 const Skills = () => {
