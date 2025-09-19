@@ -3,22 +3,22 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="w-full flex justify-center px-4 py-12">
-      <div className="max-w-[1350px] w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <section className="w-full flex justify-center py-12 ">
+      <div className="max-w-[1350px] w-full flex flex-col md:flex-row items-center justify-between">
         {/* Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center md:justify-start flex-shrink-0 ">
           <Image
             src="/my-photo.jpg" 
             alt="About Me"
-            width={300}
-            height={300}
+            width={230}
+            height={230}
             className="rounded-2xl object-cover shadow-lg"
           />
         </div>
 
         {/* Text */}
-        <div className="space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+        <div className="space-y-4 max-w-[900px] ml-0 md:ml-7 ">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mt-14 md:mt-0 mb-7 text-center md:text-left">
             About Me
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
