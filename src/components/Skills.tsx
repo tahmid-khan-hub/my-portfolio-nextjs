@@ -1,6 +1,7 @@
 "use client";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiTypescript, SiMongodb, SiExpress, SiNextdotjs, SiVercel } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const skills = [
   { id: 1, title: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
@@ -18,21 +19,26 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="w-full flex justify-center py-12">
-      <div className="max-w-[1350px] w-full px-4">
+    <section className="w-full flex justify-center py-12 mt-16 px-2">
+      <div className="max-w-[1350px] w-full ">
         <h2 className="text-3xl font-bold text-center mb-10 text-gray-900 dark:text-white">
           Skills & Tools
         </h2>
 
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-8 text-center">
           {skills.map((skill) => (
-            <div
+            <motion.div
+              whileHover={{
+              scale: 1.1, 
+              boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.7)",
+              }}
+              transition={{ duration: 0 }}
               key={skill.id}
               className="flex flex-col items-center justify-center p-4 rounded-xl shadow-md bg-gray-800 hover:bg-gray-700 transition duration-300"
             >
               <div className="text-5xl mb-3">{skill.icon}</div>
               <p className="text-gray-200 font-medium">{skill.title}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
