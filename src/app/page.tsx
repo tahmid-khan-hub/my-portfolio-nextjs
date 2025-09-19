@@ -1,7 +1,9 @@
+import About from "@/components/About";
+
 export default function Home() {
   return (
     <div className="max-w-[1350px] mx-auto p-6">
-      My portfolio
+      <About></About>
     </div>
   );
 }
