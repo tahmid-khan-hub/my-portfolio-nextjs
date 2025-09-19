@@ -1,55 +1,6 @@
-import Navbar from "@/components/Navbar";
-
 export default function Home() {
   return (
-    <div>
-      <Navbar></Navbar>
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
-      My portfolio
+    <div className="max-w-[1350px] mx-auto p-6">
       My portfolio
     </div>
   );
