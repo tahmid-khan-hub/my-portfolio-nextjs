@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins", 
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -20,11 +20,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.variable} antialiased`}
-      >
-        <Navbar></Navbar>
-        {children}
+      <body className={`${poppins.variable} antialiased `}>
+        <div className="min-h-screen w-full bg-black relative overflow-hidden">
+          {/* Blue Spotlight Background */}
+          <div
+            className="absolute inset-0 z-0 pointer-events-none"
+            style={{
+              background: `
+              radial-gradient(
+                circle at center,
+                rgba(59, 130, 246, 0.12) 0%,
+                rgba(59, 130, 246, 0.06) 20%,
+                rgba(0, 0, 0, 0.0) 60%
+              )
+            `,
+            }}
+          />
+          {/* Content */}
+          <Navbar></Navbar>
+          {children}
+        </div>
       </body>
     </html>
   );
