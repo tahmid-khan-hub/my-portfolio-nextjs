@@ -80,7 +80,7 @@ const projectsData = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="w-full bg-black text-white py-16 mb-24">
+    <section className="w-full text-white py-16 mb-24">
       <div className="max-w-[1350px] mx-auto px-4 md:px-3">
         <h2 className="text-4xl font-bold mb-12 text-center">My Projects</h2>
 
@@ -107,7 +107,7 @@ export default function Projects() {
               </h3>
 
               {/* Description */}
-              <p className="text-gray-300 font-semibold text-sm mb-7 pl-3">
+              <p className="text-gray-300 font-semibold text-sm mb-7 pl-3 pr-2">
                 {project.description}
               </p>
 
@@ -139,7 +139,7 @@ export default function Projects() {
                     href={project.gitHub_client}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1 hover:text-gray-400 transition"
+                    className="flex items-center gap-1 hover:text-blue-400 transition"
                   >
                     <FaGithub /> Client
                   </a>
@@ -148,7 +148,7 @@ export default function Projects() {
                       href={project.gitHub_server}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center gap-1 hover:text-gray-400 transition"
+                      className="flex items-center gap-1 hover:text-blue-400 transition"
                     >
                       <FaGithub /> Server
                     </a>
