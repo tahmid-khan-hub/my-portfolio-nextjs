@@ -8,7 +8,7 @@ const About = () => {
         {/* Image */}
         <div className="flex justify-center md:justify-start flex-shrink-0 ">
           <Image
-            src="/my-photo.jpg" 
+            src="/my-profile-photo.png" 
             alt="About Me"
             width={230}
             height={230}
