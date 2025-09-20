@@ -1,55 +1,78 @@
 "use client";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaPaperPlane } from "react-icons/fa";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <section
+    <div className="bg-[#0c1220]"><div
       id="contact"
-      className="w-full py-16 px-2 "
+      className="w-full py-16 px-4 md:px-3"
     >
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+      <div className="max-w-[1350px] mx-auto grid md:grid-cols-2 gap-12">
         {/* Left Side */}
         <div>
-          <h2 className="text-3xl font-bold mb-4">Contact Information</h2>
-          <p className="text-gray-600 mb-6">
+          <h2 className="text-3xl font-bold mb-7">Contact Information</h2>
+          <p className="text-gray-300 mb-6 ">
             Feel free to reach out to me via email, phone or through the form.
             I’m always open to discussing projects or opportunities.
           </p>
 
           <div className="space-y-4 mb-8">
+            {/* location */}
             <div className="flex items-center gap-3">
-              <FaMapMarkerAlt className="text-blue-600 text-xl" />
-              <span>Dhaka, Bangladesh</span>
+             <div className="p-2 rounded-full bg-gray-800"> <FaMapMarkerAlt className="text-blue-400 hover:text-blue-300 text-xl" /></div>
+              <div className="ml-2">
+                <h5 className="text-lg font-semibold">Location</h5>
+                <p className="text-sm text-gray-400 font-semibold">Sylhet, Bangladesh</p>
+              </div>
             </div>
+            {/* email */}
             <div className="flex items-center gap-3">
-              <FaEnvelope className="text-blue-600 text-xl" />
-              <span>your@email.com</span>
+             <div className="p-2 rounded-full bg-gray-800"> <FaEnvelope className="text-blue-400 hover:text-blue-300 text-xl" /></div>
+              <div className="ml-2">
+                <h5 className="text-lg font-semibold">Email</h5>
+                <p className="text-sm text-gray-400 font-semibold">tahmidkhan0011@gmail.com</p>
+              </div>
             </div>
+            {/* phone */}
             <div className="flex items-center gap-3">
-              <FaPhoneAlt className="text-blue-600 text-xl" />
-              <span>+880 1234 567890</span>
+             <div className="p-2 rounded-full bg-gray-800"> <FaPhoneAlt className="text-blue-400 hover:text-blue-300 text-xl" /></div>
+              <div className="ml-2">
+                <h5 className="text-lg font-semibold">Phone</h5>
+                <p className="text-sm text-gray-400 font-semibold">+8801610627131</p>
+              </div>
             </div>
           </div>
 
           <h3 className="text-xl font-semibold mb-3">Follow Me</h3>
-          <div className="flex gap-5 text-2xl text-gray-700">
-            <a
-              href="https://www.linkedin.com/"
+          <div className="flex gap-5 text-2xl text-white">
+            {/* linkedIn */}
+            <motion.div whileHover={{
+              scale: 1.1, 
+              boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.7)",
+              }}
+              transition={{ duration: 0 }} className="p-2 rounded-full bg-gray-800"><a
+              href="https://www.linkedin.com/in/tahmid-khan-/"
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin className="hover:text-blue-700 transition-colors" />
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">
-              <FaGithub className="hover:text-black transition-colors" />
-            </a>
+              <FaLinkedin className="transition-colors" />
+            </a></motion.div>
+            {/* gitHub */}
+            <motion.div whileHover={{
+              scale: 1.1, 
+              boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.7)",
+              }}
+              transition={{ duration: 0 }} className="p-2 rounded-full bg-gray-800"><a href="https://github.com/tahmid-khan-hub" target="_blank" rel="noreferrer">
+              <FaGithub className="transition-colors" />
+            </a></motion.div>
           </div>
         </div>
 
         {/* Right Side */}
-        <div className=" shadow-md rounded-2xl p-8">
-          <h2 className="text-2xl font-bold mb-6">Send me a message</h2>
+        <div className=" shadow-md rounded-2xl ">
+          <h2 className="text-3xl font-bold mb-6">Send me a message</h2>
           <form className="space-y-5">
             {/* Name + Email */}
             <div className="flex flex-col md:flex-row gap-4">
@@ -90,7 +113,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </section>
+    </div></div>
   );
 };
 
