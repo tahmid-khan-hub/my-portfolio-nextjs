@@ -22,9 +22,9 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="w-full flex justify-center py-12 mt-16 px-2">
+    <section className="w-full flex justify-center py-12 mt-16 mb-24 px-4 md:px-3">
       <div className="max-w-[1350px] w-full ">
-        <h2 className="text-3xl font-bold text-center mb-10 text-gray-900 dark:text-white">
+        <h2 className="text-4xl font-bold text-center mb-10 text-gray-900 dark:text-white">
           Skills & Tools
         </h2>
 

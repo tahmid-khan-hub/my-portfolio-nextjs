@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="w-full flex justify-center py-12 ">
+    <section className="w-full flex justify-center py-12 mb-24 px-4 md:px-3">
       <div className="max-w-[1350px] w-full flex flex-col md:flex-row items-center justify-between">
         {/* Image */}
         <div className="flex justify-center md:justify-start flex-shrink-0 ">
@@ -18,7 +18,7 @@ const About = () => {
 
         {/* Text */}
         <div className="space-y-4 max-w-[900px] ml-0 md:ml-7 ">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mt-14 md:mt-0 mb-7 text-center md:text-left">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mt-14 md:mt-0 mb-7 text-center md:text-left">
             About Me
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">

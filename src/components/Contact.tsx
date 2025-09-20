@@ -9,6 +9,7 @@ const Contact = () => {
       id="contact"
       className="w-full py-16 px-4 md:px-3"
     >
+        <h1 className="text-center text-4xl font-bold mb-20">Get in Touch</h1>
       <div className="max-w-[1350px] mx-auto grid md:grid-cols-2 gap-12">
         {/* Left Side */}
         <div>
@@ -45,7 +46,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <h3 className="text-xl font-semibold mb-3">Follow Me</h3>
+          <h3 className="text-xl font-bold mb-3">Follow Me</h3>
           <div className="flex gap-5 text-2xl text-white mb-3">
             {/* linkedIn */}
             <motion.div whileHover={{
