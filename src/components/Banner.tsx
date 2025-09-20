@@ -6,11 +6,11 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Banner() {
   return (
-    <section className="w-full bg-black text-white py-16">
-      <div className="max-w-[1350px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-4 md:px-3">
+    <section className="w-full bg-[#0c1220] text-white py-16 mb-24 ">
+      <div className="max-w-[1350px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-4 md:px-3 py-[70px]">
         
         {/* Left Side */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
             Hi, I’m Tahmid
           </h1>
@@ -44,17 +44,17 @@ export default function Banner() {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-6 w-full sm:w-auto justify-center md:justify-start">
+          <div className="flex gap-4 mb-6 w-full sm:w-auto justify-center md:justify-start">
             <button className="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors font-medium">
-              Hire Me
+                Hire Me
             </button>
             <button className="px-6 py-3 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-medium">
-              View Portfolio
+                View Portfolio
             </button>
           </div>
 
           {/* Social Icons */}
-          <div className="flex gap-6 text-2xl justify-center md:justify-start">
+          <div className="flex gap-6 text-2xl justify-center md:justify-start mt-2">
             <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <FaFacebook className="hover:text-blue-500 transition-colors" />
             </a>
@@ -68,17 +68,17 @@ export default function Banner() {
         </div>
 
         {/* Right Side - Image with motion */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-end order-1 md:order-2">
           <motion.div
-            animate={{ y: [0, -20, 0] }}
+            animate={{ y: [0, -10, 0] }}
             transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
           >
             <Image
               src="/my-profile-photo.png" 
               alt="Banner Image"
-              width={400}
-              height={400}
-              className="rounded-2xl object-cover"
+              width={320}
+              height={320}
+              className="rounded-full object-cover"
             />
           </motion.div>
         </div>
