@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const projectsData = [
   {
+    id: "1",
     title: "ThreadQube",
     image: "https://i.ibb.co/rKWWk7Fr/thread-banner.png",
     description:
@@ -28,6 +30,7 @@ const projectsData = [
     gitHub_server: "https://github.com/tahmid-khan-hub/Thread-Qube-Server",
   },
   {
+    id: "2",
     title: "NexUScore",
     image: "https://i.ibb.co/sdkNqSz6/image.png",
     description:
@@ -49,6 +52,7 @@ const projectsData = [
     gitHub_client: "https://github.com/tahmid-khan-hub/Nexus-Core",
   },
   {
+    id: "3",
     title: "EventExplorar",
     image: "https://i.ibb.co/6jJhcgC/image.png",
     description:
@@ -58,6 +62,7 @@ const projectsData = [
     gitHub_client: "https://github.com/tahmid-khan-hub/Event-Explorar",
   },
   {
+    id: "4",
     title: "RecipeBook",
     image: "https://i.ibb.co/v6d1rKdF/image.png",
     description:
@@ -156,9 +161,9 @@ export default function Projects() {
                 </div>
 
                 {/* details */}
-                <button className="text-blue-500 hover:text-blue-400 text-xl transition">
+                <Link href={`/projects-details/${project.id}`}><button className="text-blue-500 hover:text-blue-400 text-xl transition">
                   <FaArrowRightLong size={25}/>
-                </button>
+                </button></Link>
               </div>
             </div>
           ))}
