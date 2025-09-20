@@ -5,8 +5,8 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <div className="">
-      <About></About>
-      <Skills></Skills>
+      <div id="about"><About></About></div>
+      <div id="skills"><Skills></Skills></div>
       <Contact></Contact>
     </div>
   );
