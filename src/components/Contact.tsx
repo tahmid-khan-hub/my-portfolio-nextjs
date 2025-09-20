@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
 
           <h3 className="text-xl font-semibold mb-3">Follow Me</h3>
-          <div className="flex gap-5 text-2xl text-white">
+          <div className="flex gap-5 text-2xl text-white mb-3">
             {/* linkedIn */}
             <motion.div whileHover={{
               scale: 1.1, 
@@ -71,20 +71,20 @@ const Contact = () => {
         </div>
 
         {/* Right Side */}
-        <div className=" shadow-md rounded-2xl ">
-          <h2 className="text-3xl font-bold mb-6">Send me a message</h2>
+        <div className=" rounded-2xl ">
+          <h2 className="text-3xl font-bold mb-8">Send me a message</h2>
           <form className="space-y-5">
             {/* Name + Email */}
             <div className="flex flex-col md:flex-row gap-4">
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -92,23 +92,23 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Subject"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
 
             {/* Message */}
             <textarea
               placeholder="Message"
               rows={6}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
             ></textarea>
 
             {/* Button */}
             <button
-              type="submit"
-              className="flex items-center gap-2 bg-blue-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+            type="submit"
+            className="flex w-full justify-center items-center bg-blue-600 text-white font-semibold px-6 py-3 rounded-3xl hover:bg-blue-700 transition-colors"
             >
-              <FaPaperPlane />
-              Send Message
+            Send Message
+            <FaPaperPlane className="ml-4" />
             </button>
           </form>
         </div>
