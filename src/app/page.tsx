@@ -9,7 +9,7 @@ export default function Home() {
       <div id="banner"><Banner></Banner></div>
       <div id="about"><About></About></div>
       <div id="skills"><Skills></Skills></div>
-      <Contact></Contact>
+      <div id="contact"><Contact></Contact></div>
     </div>
   );
 }

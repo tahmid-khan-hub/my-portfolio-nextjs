@@ -4,10 +4,11 @@ import Link from "next/link";
 export default function Navbar() {
   const links = (
     <>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li className="font-semibold"><a href="#banner">Banner</a></li>
+      <li className="font-semibold"><a href="#about">About</a></li>
+      <li className="font-semibold"><a href="#skills">Skills</a></li>
+      <li className="font-semibold"><a href="#projects">Projects</a></li>
+      <li className="font-semibold"><a href="#contact">Contact</a></li>
     </>
   );
 

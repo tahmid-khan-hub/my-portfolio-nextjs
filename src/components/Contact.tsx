@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <div className="bg-[#0c1220]"><div
-      id="contact"
       className="w-full py-16 px-4 md:px-3"
     >
         <h1 className="text-center text-4xl font-bold mb-20">Get in Touch</h1>
