@@ -6,28 +6,41 @@ const Education = () => {
   return (
     <div>
       <div className="max-w-[1350px] mx-auto px-4 md:px-3 py-16 mb-24">
-        <h1 className="text-center text-4xl font-bold mb-8">Education & Certification</h1>
-        <div>
+        <h1 className="text-center text-4xl font-bold mb-12">
+          Education & Certification
+        </h1>
+
+        {/* Responsive layout: column on small, row on md+ */}
+        <div className="flex flex-col md:flex-row md:items-start gap-8">
           {/* Education */}
-          <div className="mb-12 ml-6">
-            <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2"></div>
-            <div className="p-5 rounded-xl shadow-md border border-gray-200 dark:border-gray-700">
+          <div className="flex-1 relative bg-gray-800 rounded-xl">
+            <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2 md:hidden"></div>
+            <div className="p-5 shadow-md">
               <h3 className="text-lg font-semibold">BSc in CSE</h3>
               <p className="text-sm text-gray-500">
                 Metropolitan University, Sylhet, Bangladesh
+              </p>
+              <p className="mt-3 mb-7">
+                I’m currently pursuing my Bachelor’s degree with a focus on web
+                development and problem-solving. I actively build full-stack
+                projects using the MERN stack and continuously improve my skills
+                through hands-on learning.
               </p>
               <p className="text-sm mt-1">2023 - 2027</p>
             </div>
           </div>
 
+          {/* Divider (only visible on md+) */}
+          <div className="hidden md:block divider divider-horizontal bg-red-300 "></div>
+
           {/* Certificate */}
-          <div>
+          <div className="flex-1">
             <CertificateCard
               title="Web Development Course"
               platform="Random Platform Name"
               year="2022"
               link="https://drive.google.com/file/d/1JxLSK5BKnyFT4ZJWJYVbOyvec9f61bNf/view?usp=sharing"
-            ></CertificateCard>
+            />
           </div>
         </div>
       </div>
