@@ -15,6 +15,7 @@ export default function Navbar() {
       <li className="font-semibold"><a href="#about">About</a></li>
       <li className="font-semibold"><a href="#skills">Skills</a></li>
       <li className="font-semibold"><a href="#projects">Projects</a></li>
+      <li className="font-semibold"><a href="#education">Education</a></li>
       <li className="font-semibold"><a href="#contact">Contact</a></li>
     </>
   );
