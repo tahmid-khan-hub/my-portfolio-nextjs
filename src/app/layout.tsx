@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} antialiased `}>
-        <div className="min-h-screen w-full bg-black relative overflow-hidden">
+        <div className="min-h-screen w-full bg-black relative">
           {/* Blue Spotlight Background */}
           <div
             className="absolute inset-0 z-0 pointer-events-none"
