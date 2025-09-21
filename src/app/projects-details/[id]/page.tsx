@@ -9,7 +9,7 @@ export default async function ProjectDetails({params}: { params: { id: string } 
     const project = data.find((p) => p.id === params.id);
     console.log(project);
     return <div>
-        <div className="max-w-[1350px] mx-auto px-4 md:px-3">
+        <div className="max-w-[1350px] mx-auto px-4 md:px-3 mt-8">
             {/* back button */}
             <Link href={'/'}><button className="btn"><FaArrowLeftLong size={25} /></button></Link>
 
