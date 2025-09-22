@@ -18,11 +18,11 @@ const CertificateCard = ({
         <div>
           <h3 className="text-lg font-semibold">{title}</h3>
           <p className="text-sm text-gray-500">{platform}</p>
-          <p className="text-sm mt-1">{year}</p>
+          <p className="text-sm mt-5 font-semibold">{year}</p>
         </div>
         <FaArrowRightLong
           onClick={() => window.open(link, "_blank")}
-          className="w-5 h-5 text-gray-600 group-hover:text-blue-500"
+          className="text-blue-500 hover:text-blue-400 text-xl transition"
         />
       </div>
     </div>

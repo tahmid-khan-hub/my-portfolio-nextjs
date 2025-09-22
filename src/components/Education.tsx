@@ -14,6 +14,7 @@ const Education = () => {
         <div className="flex flex-col md:flex-row md:items-start gap-8">
           {/* Education */}
           <div className="flex-1 relative bg-gray-800 rounded-xl">
+            {/* dot */}
             <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2 md:hidden"></div>
             <div className="p-5 shadow-md">
               <h3 className="text-lg font-semibold">BSc in CSE</h3>
@@ -26,19 +27,21 @@ const Education = () => {
                 projects using the MERN stack and continuously improve my skills
                 through hands-on learning.
               </p>
-              <p className="text-sm mt-1">2023 - 2027</p>
+              <p className="text-sm mt-1 font-semibold">2023 - 2027</p>
             </div>
           </div>
 
           {/* Divider (only visible on md+) */}
-          <div className="hidden md:block divider divider-horizontal bg-red-300 "></div>
+          <div className="divider divider-horizontal "></div>
 
           {/* Certificate */}
-          <div className="flex-1">
+          <div className="flex-1 relative bg-gray-800 rounded-xl">
+            {/* dot */}
+             <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2 md:hidden"></div>
             <CertificateCard
-              title="Web Development Course"
-              platform="Random Platform Name"
-              year="2022"
+              title="Complete Web Development Course"
+              platform="Programming Hero"
+              year="2025"
               link="https://drive.google.com/file/d/1JxLSK5BKnyFT4ZJWJYVbOyvec9f61bNf/view?usp=sharing"
             />
           </div>

@@ -162,7 +162,7 @@ export default function Projects() {
 
                 {/* details */}
                 <Link href={`/projects-details/${project.id}`}><button className="text-blue-500 hover:text-blue-400 text-xl transition">
-                  <FaArrowRightLong size={25}/>
+                  <FaArrowRightLong size={25} className="-mb-1.5"/>
                 </button></Link>
               </div>
             </div>
