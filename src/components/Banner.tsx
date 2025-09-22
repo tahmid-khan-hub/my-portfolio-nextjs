@@ -5,6 +5,9 @@ import { TypeAnimation } from "react-type-animation";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Banner() {
+
+  const ResumeLink = "https://drive.google.com/file/d/16k9w-P6pC50HAqZrSeEqBupy0Y2Kq-LJ/view";
+
   return (
     <section className="w-full bg-[#0c1220] text-white py-16 mb-24 ">
       <div className="max-w-[1350px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-4 md:px-3 py-[70px]">
@@ -22,7 +25,7 @@ export default function Banner() {
               2000,
               "A Problem Solver",
               2000,
-              "A Fast Learner",
+              "A Tech Enthusiast",
               2000,
               "An Aspiring Engineer",
               2000,
@@ -45,12 +48,14 @@ export default function Banner() {
 
           {/* Buttons */}
           <div className="flex gap-4 mb-6 w-full sm:w-auto justify-center md:justify-start">
-            <button className="px-6 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors font-medium">
-                Hire Me
+            <button
+             onClick={() => window.open(ResumeLink, "_blank")} 
+             className="px-6 py-2.5 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                Resume
             </button>
-            <button className="px-6 py-3 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-medium">
-                View Portfolio
-            </button>
+            <a href="#projects"><button className="px-6 py-2.5 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-medium">
+                My Work
+            </button></a>
           </div>
 
           {/* Social Icons */}
