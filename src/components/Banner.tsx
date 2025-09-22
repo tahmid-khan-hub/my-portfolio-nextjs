@@ -6,7 +6,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Banner() {
 
-  const ResumeLink = "https://drive.google.com/file/d/16k9w-P6pC50HAqZrSeEqBupy0Y2Kq-LJ/view";
+  const ResumeLink = "https://drive.google.com/file/d/1a5gRXtYvR2HSpi5xCsk8M3k6tzPpVDLe/view?usp=sharing";
 
   return (
     <section className="w-full bg-[#0c1220] text-white py-16 mb-24 ">
