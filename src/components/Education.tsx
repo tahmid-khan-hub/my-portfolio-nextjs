@@ -35,12 +35,13 @@ const Education = () => {
           <div className="divider divider-horizontal "></div>
 
           {/* Certificate */}
-          <div className="flex-1 relative bg-gray-800 rounded-xl">
+          <div className="flex-1 relative bg-gray-800 rounded-xl mt-0 md:mt-[320px]">
             {/* dot */}
              <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2 md:hidden"></div>
             <CertificateCard
               title="Complete Web Development Course"
               platform="Programming Hero"
+              details="I completed this course, which focused on modern web development. It helped me strengthen my coding skills while gaining practical experience through structured projects and guided learning."
               year="2025"
               link="https://drive.google.com/file/d/1JxLSK5BKnyFT4ZJWJYVbOyvec9f61bNf/view?usp=sharing"
             />
