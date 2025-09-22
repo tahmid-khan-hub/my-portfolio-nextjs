@@ -105,7 +105,7 @@ const Contact = () => {
             {/* Button */}
             <button
             type="submit"
-            className="flex w-full justify-center items-center bg-blue-600 text-white font-semibold px-6 py-3 rounded-3xl hover:bg-blue-700 transition-colors"
+            className="flex font-semibold w-full justify-center items-center bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-800 transition px-6 py-3 rounded-3xl "
             >
             Send Message
             <FaPaperPlane className="ml-4" />
