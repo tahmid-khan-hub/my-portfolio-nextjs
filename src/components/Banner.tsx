@@ -15,7 +15,7 @@ export default function Banner() {
         {/* Left Side */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            Hi, I’m Tahmid
+            Hi, I’m <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Tahmid</span>
           </h1>
 
           {/* Type Animation */}

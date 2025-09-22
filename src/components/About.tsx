@@ -19,7 +19,7 @@ const About = () => {
         {/* Text */}
         <div className="space-y-4 max-w-[900px] ml-0 md:ml-7 ">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mt-14 md:mt-0 mb-7 text-center md:text-left">
-            About Me
+            About <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
             I&apos;m a passionate <span className="font-bold mr-1">Web developer</span> 

@@ -7,7 +7,7 @@ const Education = () => {
     <div>
       <div className="max-w-[1350px] mx-auto px-4 md:px-3 py-16 mb-24">
         <h1 className="text-center text-4xl font-bold mb-12">
-          Education & Certification
+          Education & <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Certification</span>
         </h1>
 
         {/* Responsive layout: column on small, row on md+ */}
