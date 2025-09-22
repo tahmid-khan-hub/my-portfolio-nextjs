@@ -60,15 +60,15 @@ export default function Banner() {
 
           {/* Social Icons */}
           <div className="flex gap-6 text-2xl justify-center md:justify-start mt-2">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <div className="p-2 bg-gray-800 rounded-full"><a href="https://facebook.com" target="_blank" rel="noreferrer">
               <FaFacebook className="hover:text-blue-500 transition-colors" />
-            </a>
-            <a href="https://github.com" target="_blank" rel="noreferrer">
+            </a></div>
+            <div className="p-2 bg-gray-800 rounded-full"><a href="https://github.com" target="_blank" rel="noreferrer">
               <FaGithub className="hover:text-gray-400 transition-colors" />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            </a></div>
+            <div className="p-2 bg-gray-800 rounded-full"><a href="https://linkedin.com" target="_blank" rel="noreferrer">
               <FaLinkedin className="hover:text-blue-400 transition-colors" />
-            </a>
+            </a></div>
           </div>
         </div>
 
