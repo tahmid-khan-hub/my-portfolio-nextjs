@@ -1,9 +1,18 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [activeHash, setActiveHash] = useState("");
+
+  useEffect(() => {
+    const updateHash = () => setActiveHash(window.location.hash);
+    updateHash(); 
+    window.addEventListener("hashchange", updateHash);
+    return () => window.removeEventListener("hashchange", updateHash);
+  }, []);
 
   if (pathname.startsWith("/projects-details/")) {
     return null;
@@ -11,12 +20,78 @@ export default function Navbar() {
 
   const links = (
     <>
-      <li className="font-semibold"><a href="#banner">Banner</a></li>
-      <li className="font-semibold"><a href="#about">About</a></li>
-      <li className="font-semibold"><a href="#skills">Skills</a></li>
-      <li className="font-semibold"><a href="#projects">Projects</a></li>
-      <li className="font-semibold"><a href="#education">Education</a></li>
-      <li className="font-semibold"><a href="#contact">Contact</a></li>
+      <li>
+        <a
+          href="#banner"
+          className={`font-semibold pb-1 ${
+            activeHash === "#banner"
+              ? "border-b-2 border-blue-500 "
+              : ""
+          }`}
+        >
+          Banner
+        </a>
+      </li>
+      <li>
+        <a
+          href="#about"
+          className={`font-semibold pb-1 ${
+            activeHash === "#about"
+              ? "border-b-2 border-blue-500 "
+              : ""
+          }`}
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          href="#skills"
+          className={`font-semibold pb-1 ${
+            activeHash === "#skills"
+              ? "border-b-2 border-blue-500 "
+              : ""
+          }`}
+        >
+          Skills
+        </a>
+      </li>
+      <li>
+        <a
+          href="#projects"
+          className={`font-semibold pb-1 ${
+            activeHash === "#projects"
+              ? "border-b-2 border-blue-500 "
+              : ""
+          }`}
+        >
+          Projects
+        </a>
+      </li>
+      <li>
+        <a
+          href="#education"
+          className={`font-semibold pb-1 ${
+            activeHash === "#education"
+              ? "border-b-2 border-blue-500 "
+              : ""
+          }`}
+        >
+          Education
+        </a>
+      </li>
+      <li>
+        <a
+          href="#contact"
+          className={`font-semibold pb-1 ${
+            activeHash === "#contact"
+              ? "border-b-2 border-blue-500 "
+              : ""
+          }`}
+        >
+          Contact
+        </a>
+      </li>
     </>
   );
 
@@ -30,9 +105,7 @@ export default function Navbar() {
 
         {/* Right side */}
         <div className="navbar-end">
-          <ul className="hidden lg:flex menu menu-horizontal px-1">
-            {links}
-          </ul>
+          <ul className="hidden lg:flex menu menu-horizontal px-1">{links}</ul>
 
           {/* Mobile menu */}
           <div className="lg:hidden dropdown dropdown-end">
