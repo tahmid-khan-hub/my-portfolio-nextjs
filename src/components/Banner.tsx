@@ -33,7 +33,7 @@ export default function Banner() {
             wrapper="span"
             speed={50}
             repeat={Infinity}
-            className="text-2xl md:text-3xl font-semibold text-blue-500 mb-6"
+            className="text-3xl font-semibold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent inline-block mb-6"
           />
 
           {/* Paragraphs */}
@@ -50,10 +50,10 @@ export default function Banner() {
           <div className="flex gap-4 mb-6 w-full sm:w-auto justify-center md:justify-start">
             <button
              onClick={() => window.open(ResumeLink, "_blank")} 
-             className="px-6 py-2.5 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+             className="px-6 py-2.5 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-800 transition rounded-xl font-medium">
                 Resume
             </button>
-            <a href="#projects"><button className="px-6 py-2.5 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-medium">
+            <a href="#projects"><button className="px-6 py-2.5 border bg-gradient-to-r from-bg-[#0c1220] to-bg-[#0c1220]  hover:border-blue-500 hover:text-blue-500 transition rounded-xl font-medium">
                 My Work
             </button></a>
           </div>
