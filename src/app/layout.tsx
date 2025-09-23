@@ -11,6 +11,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Portfolio",
+  icons: {
+    icon: "/My Portfolio logo.png",
+  },
 };
 
 export default function RootLayout({

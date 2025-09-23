@@ -1,6 +1,11 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowLeftLong } from "react-icons/fa6";
+
+export const metadata: Metadata = {
+  title: "Portfolio | Project-Details",
+};
 
 export default async function ProjectDetails({params}: { params: { id: string } }) {
     const res = await fetch("http://localhost:3000/projectsData.json");
