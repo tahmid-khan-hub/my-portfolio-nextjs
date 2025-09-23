@@ -158,14 +158,14 @@ const Contact = () => {
               <div className="flex flex-col md:flex-row gap-4">
                 <input
                   type="text"
-                  name="from_name" // ✅ must match EmailJS template field
+                  name="name"
                   placeholder="Your Name"
                   className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
                 <input
                   type="email"
-                  name="from_email" // ✅ must match EmailJS template field
+                  name="email"
                   placeholder="Your Email"
                   className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
@@ -175,14 +175,14 @@ const Contact = () => {
               {/* Subject */}
               <input
                 type="text"
-                name="subject" // ✅ add to EmailJS template if needed
+                name="title"
                 placeholder="Subject"
                 className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
 
               {/* Message */}
               <textarea
-                name="message" // ✅ must match EmailJS template field
+                name="message" 
                 placeholder="Message"
                 rows={6}
                 className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
