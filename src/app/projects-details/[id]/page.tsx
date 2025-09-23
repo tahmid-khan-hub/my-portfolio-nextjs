@@ -8,13 +8,13 @@ export default async function ProjectDetails({params}: { params: { id: string } 
 
     const project = data.find((p) => p.id === params.id);
     console.log(project);
-    return <div>
-        <div className="max-w-[1350px] mx-auto px-4 md:px-3 mt-8">
+    return <div className="bg-[#0c1220] pb-10">
+        <div className="max-w-[1350px] mx-auto px-4 md:px-3 ">
             {/* back button */}
-            <Link href={'/'}><button className="btn"><FaArrowLeftLong size={25} /></button></Link>
+            <Link href={'/'}><button className="border p-2 px-4 mt-11 text-blue-500 hover:text-white hover:border-blue-700 hover:bg-blue-500  text-xl transition rounded-xl"><FaArrowLeftLong size={25} /></button></Link>
 
             {/* content */}
-            <div className="mt-9 mb-5 pt-4 bg-[#0c1220] rounded-xl">
+            <div className="mt-9 pb-5 pt-4 bg-[#162036] rounded-xl">
                 {/* title */}
                 <h1 className="text-center text-3xl font-bold mb-5 mt-3">{project.title}</h1>
                 {/* image */}
