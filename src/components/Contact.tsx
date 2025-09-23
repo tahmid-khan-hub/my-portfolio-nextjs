@@ -21,27 +21,33 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_xxxxxx", // EmailJS service ID
-        "template_xxxxxx", //  template ID
+        process.env.NEXT_PUBLIC_SERVICE_ID!, // add !
+        process.env.NEXT_PUBLIC_TEMPLATE_ID!, // add !
         form.current,
-        "your_public_key" //  public key
+        process.env.NEXT_PUBLIC_PUBLIC_KEY! // add !
       )
       .then(
         () => {
           Swal.fire({
+            toast: true,
+            position: "top-end",
             icon: "success",
-            title: "Message Sent!",
-            text: "Thanks for reaching out. I’ll get back to you soon 😊",
-            confirmButtonColor: "#3b82f6",
+            title: "Message sent successfully",
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
           });
           form.current?.reset();
         },
         (error) => {
           Swal.fire({
+            toast: true,
+            position: "top-end",
             icon: "error",
-            title: "Oops...",
-            text: "Something went wrong. Please try again later.",
-            confirmButtonColor: "#ef4444",
+            title: "Failed to send message",
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
           });
           console.error("FAILED...", error.text);
         }
