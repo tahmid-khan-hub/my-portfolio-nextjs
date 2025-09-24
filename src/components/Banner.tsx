@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiCodeforces } from "react-icons/si";
 
 export default function Banner() {
 
@@ -68,6 +69,9 @@ export default function Banner() {
             </a></div>
             <div className="p-2 bg-gray-800 rounded-full"><a href="https://linkedin.com" target="_blank" rel="noreferrer">
               <FaLinkedin className="hover:text-blue-400 transition-colors" />
+            </a></div>
+            <div className="p-2 bg-gray-800 rounded-full"><a href="https://codeforces.com/profile/Tahmid.bd" target="_blank" rel="noreferrer">
+              <SiCodeforces className="hover:text-blue-400 transition-colors" />
             </a></div>
           </div>
         </div>
