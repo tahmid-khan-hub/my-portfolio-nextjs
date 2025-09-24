@@ -6,6 +6,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaPaperPlane,
+  FaFacebook,
 } from "react-icons/fa";
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
@@ -113,6 +114,23 @@ const Contact = () => {
 
             <h3 className="text-xl font-bold mb-3">Follow Me</h3>
             <div className="flex gap-5 text-2xl text-white mb-3">
+              {/* facebook */}
+              <motion.div
+                whileHover={{
+                  scale: 1.1,
+                  boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.7)",
+                }}
+                transition={{ duration: 0 }}
+                className="p-2 rounded-full bg-gray-800"
+              >
+                <a
+                  href="https://www.facebook.com/tahmid.khan.35762241"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaFacebook className="transition-colors" />
+                </a>
+              </motion.div>
               {/* linkedIn */}
               <motion.div
                 whileHover={{

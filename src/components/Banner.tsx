@@ -61,7 +61,7 @@ export default function Banner() {
 
           {/* Social Icons */}
           <div className="flex gap-6 text-2xl justify-center md:justify-start mt-2">
-            <div className="p-2 bg-gray-800 rounded-full"><a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <div className="p-2 bg-gray-800 rounded-full"><a href="https://www.facebook.com/tahmid.khan.35762241" target="_blank" rel="noreferrer">
               <FaFacebook className="hover:text-blue-500 transition-colors" />
             </a></div>
             <div className="p-2 bg-gray-800 rounded-full"><a href="https://github.com" target="_blank" rel="noreferrer">
