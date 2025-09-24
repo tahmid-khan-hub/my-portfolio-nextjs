@@ -57,14 +57,14 @@ const Contact = () => {
 
   return (
     <div className="bg-[#0c1220]">
-      <div className="w-full py-16 px-4 md:px-3">
+      <div className="w-full py-16 px-6 md:px-3">
         <h1 className="text-center text-4xl font-bold mb-20">
           Get in{" "}
           <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">
             Touch
           </span>
         </h1>
-        <div className="max-w-[1350px] mx-auto grid md:grid-cols-2 gap-12">
+        <div className="max-w-[1330px] mx-auto grid md:grid-cols-2 gap-12">
           {/* Left Side */}
           <div>
             <h2 className="text-3xl font-bold mb-7">Contact Information</h2>
