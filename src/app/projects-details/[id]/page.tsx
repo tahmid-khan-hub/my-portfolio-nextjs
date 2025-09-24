@@ -1,3 +1,4 @@
+import Loading from "@/app/loading";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,7 +13,11 @@ export default async function ProjectDetails({params}: { params: { id: string } 
     const data = await res.json();
 
     const project = data.find((p) => p.id === params.id);
-    console.log(project);
+
+    if(!project){
+        <Loading></Loading>;
+    }
+
     return <div className="bg-[#0c1220] pb-10">
         <div className="max-w-[1350px] mx-auto px-4 md:px-3 ">
             {/* back button */}
