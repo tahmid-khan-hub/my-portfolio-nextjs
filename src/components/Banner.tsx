@@ -11,7 +11,7 @@ export default function Banner() {
 
   return (
     <section className="w-full bg-[#0c1220] text-white py-16 mb-24 ">
-      <div className="max-w-[1350px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-4 md:px-3 py-[70px]">
+      <div className="max-w-[1350px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-4 md:px-3 py-[95px]">
         
         {/* Left Side */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
