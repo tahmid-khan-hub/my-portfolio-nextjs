@@ -86,7 +86,7 @@ const projectsData = [
 export default function Projects() {
   return (
     <section className="w-full text-white py-16 mb-24">
-      <div className="max-w-[1350px] mx-auto px-4 md:px-3 border">
+      <div className="max-w-[1350px] mx-auto px-4 md:px-3">
         <h2 className="text-4xl font-bold mb-12 text-center">My <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Projects</span></h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
