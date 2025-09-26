@@ -15,7 +15,7 @@ const Education = () => {
           {/* Education */}
           <div className="flex-1 relative bg-gray-800 rounded-xl">
             {/* dot */}
-            <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2 md:hidden"></div>
+            <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2 "></div>
             <div className="p-5 shadow-md">
               <h3 className="text-lg font-semibold">BSc in CSE</h3>
               <p className="text-sm text-gray-500">
@@ -37,7 +37,7 @@ const Education = () => {
           {/* Certificate */}
           <div className="flex-1 relative bg-gray-800 rounded-xl mt-0 md:mt-[320px]">
             {/* dot */}
-             <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2 md:hidden"></div>
+             <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2 "></div>
             <CertificateCard
               title="Complete Web Development Course"
               platform="Programming Hero"

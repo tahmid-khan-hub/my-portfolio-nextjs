@@ -51,10 +51,10 @@ export default function Banner() {
           <div className="flex gap-4 mb-6 w-full sm:w-auto justify-center md:justify-start">
             <button
              onClick={() => window.open(ResumeLink, "_blank")} 
-             className="px-6 py-2.5 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-400 hover:from-blue-800 hover:to-blue-800 transition rounded-xl font-medium">
+             className="px-6 py-2.5 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-400 hover:from-blue-900 hover:to-blue-800 transition rounded-xl font-medium">
                 Resume
             </button>
-            <a href="#projects"><button className="px-6 py-2.5 border bg-gradient-to-r from-bg-[#0c1220] to-bg-[#0c1220]  hover:border-blue-500 hover:text-blue-500 transition rounded-xl font-medium">
+            <a href="#projects"><button className="px-6 py-2.5 bg-gradient-to-r border text-blue-500 hover:text-white hover:border-blue-700 hover:from-blue-800 hover:to-blue-700 transition rounded-xl font-medium">
                 My Work
             </button></a>
           </div>

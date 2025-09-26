@@ -52,7 +52,7 @@ const About = () => {
             <li>Exploring new technologies like Next.js, TypeScript, Redux and modern API patterns</li>
           </ul>
 
-          <p className="italic text-lg text-gray-900 dark:text-gray-100 mt-7">
+          <p className="italic text-lg bg-gradient-to-r from-blue-700 via-blue-400 to-blue-200 bg-clip-text text-transparent mt-7">
             &quot;Turning ideas into scalable solutions — one line of code at a time.&quot;
           </p>
         </div>
