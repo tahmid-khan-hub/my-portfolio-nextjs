@@ -51,7 +51,7 @@ export default function Banner() {
           <div className="flex gap-4 mb-6 w-full sm:w-auto justify-center md:justify-start">
             <button
              onClick={() => window.open(ResumeLink, "_blank")} 
-             className="px-6 py-2.5 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-800 transition rounded-xl font-medium">
+             className="px-6 py-2.5 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-400 hover:from-blue-800 hover:to-blue-800 transition rounded-xl font-medium">
                 Resume
             </button>
             <a href="#projects"><button className="px-6 py-2.5 border bg-gradient-to-r from-bg-[#0c1220] to-bg-[#0c1220]  hover:border-blue-500 hover:text-blue-500 transition rounded-xl font-medium">
@@ -62,10 +62,10 @@ export default function Banner() {
           {/* Social Icons */}
           <div className="flex gap-6 text-2xl justify-center md:justify-start mt-2">
             <div className="p-2 bg-gray-800 rounded-full"><a href="https://www.facebook.com/tahmid.khan.35762241" target="_blank" rel="noreferrer">
-              <FaFacebook className="hover:text-blue-500 transition-colors" />
+              <FaFacebook className="hover:text-blue-400 transition-colors" />
             </a></div>
             <div className="p-2 bg-gray-800 rounded-full"><a href="https://github.com" target="_blank" rel="noreferrer">
-              <FaGithub className="hover:text-gray-400 transition-colors" />
+              <FaGithub className="hover:text-blue-400 transition-colors" />
             </a></div>
             <div className="p-2 bg-gray-800 rounded-full"><a href="https://linkedin.com" target="_blank" rel="noreferrer">
               <FaLinkedin className="hover:text-blue-400 transition-colors" />
