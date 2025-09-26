@@ -23,11 +23,11 @@ export default function Navbar() {
       <li>
         <a
           href="#banner"
-          className={`font-semibold pb-1 ${
+          className={`font-semibold pb-1 border-b-2 border-transparent ${
             activeHash === "#banner"
-              ? "border-b-2 border-blue-500 "
-              : ""
-          }`}
+              ? "[border-image:linear-gradient(to_right,#1d4ed8,#3b82f6)_1]"
+              : "border-none"
+          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
         >
           Banner
         </a>
@@ -35,11 +35,11 @@ export default function Navbar() {
       <li>
         <a
           href="#about"
-          className={`font-semibold pb-1 ${
+          className={`font-semibold pb-1 border-b-2 ${
             activeHash === "#about"
-              ? "border-b-2 border-blue-500 "
-              : ""
-          }`}
+              ? "border-transparent [border-image:linear-gradient(to_right,#1d4ed8,#3b82f6)_1]"
+              : "border-none"
+          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
         >
           About
         </a>
@@ -47,11 +47,11 @@ export default function Navbar() {
       <li>
         <a
           href="#skills"
-          className={`font-semibold pb-1 ${
+          className={`font-semibold pb-1 border-b-2 ${
             activeHash === "#skills"
-              ? "border-b-2 border-blue-500 "
-              : ""
-          }`}
+              ? "border-transparent [border-image:linear-gradient(to_right,#1d4ed8,#3b82f6)_1]"
+              : "border-none"
+          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
         >
           Skills
         </a>
@@ -59,11 +59,11 @@ export default function Navbar() {
       <li>
         <a
           href="#projects"
-          className={`font-semibold pb-1 ${
+          className={`font-semibold pb-1 border-b-2 ${
             activeHash === "#projects"
-              ? "border-b-2 border-blue-500 "
-              : ""
-          }`}
+              ? "border-transparent [border-image:linear-gradient(to_right,#1d4ed8,#3b82f6)_1]"
+              : "border-none"
+          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
         >
           Projects
         </a>
@@ -71,11 +71,11 @@ export default function Navbar() {
       <li>
         <a
           href="#education"
-          className={`font-semibold pb-1 ${
+          className={`font-semibold pb-1 border-b-2 ${
             activeHash === "#education"
-              ? "border-b-2 border-blue-500 "
-              : ""
-          }`}
+              ? "border-transparent [border-image:linear-gradient(to_right,#1d4ed8,#3b82f6)_1]"
+              : "border-none"
+          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
         >
           Education
         </a>
@@ -87,7 +87,7 @@ export default function Navbar() {
             activeHash === "#contact"
               ? "border-b-2 border-blue-500 "
               : ""
-          }`}
+          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
         >
           Contact
         </a>
