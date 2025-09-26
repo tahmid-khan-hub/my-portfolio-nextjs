@@ -3,19 +3,18 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import { ProjectData } from "../ProjectData";
 
 export const metadata: Metadata = {
   title: "Portfolio | Project-Details",
 };
 
 export default async function ProjectDetails({params}: { params: { id: string } }) {
-    const res = await fetch("http://localhost:3000/projectsData.json");
-    const data = await res.json();
 
-    const project = data.find((p) => p.id === params.id);
+    const project = ProjectData.find((p) => p.id === params.id);
 
     if(!project){
-        <Loading></Loading>;
+       return <Loading></Loading>;
     }
 
     return <div className="bg-[#0c1220] pb-10">
