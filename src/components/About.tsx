@@ -4,7 +4,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="w-full flex justify-center py-20 pb-24 mb-24 px-4 md:px-3">
-      <div className="max-w-[1350px] w-full flex flex-col md:flex-row items-center justify-between">
+      <div className="max-w-[1330px] w-full flex flex-col md:flex-row items-center justify-between">
         {/* Image */}
         <div className="flex justify-center md:justify-start flex-shrink-0 ">
           <Image
