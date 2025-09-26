@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👤 Tahmid's Portfolio
 
-## Getting Started
+Welcome to my personal portfolio website, built with modern web technologies to showcase my work, skills and background as a Web developer.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This is a fully responsive portfolio website designed to introduce myself, display my technical skills and highlight the projects I have built. The site is built using **Next.js** and **TypeScript**, styled with **Tailwind CSS** and hosted on **Vercel**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Sections
 
-## Learn More
+### 🚀 Banner & Navbar
+- Clean, minimal sticky navigation bar
+- Dynamic banner introducing me with animated typing effect
 
-To learn more about Next.js, take a look at the following resources:
+### 👤 About Me
+- A short description of my background, passion and journey in web development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🛠️ Skills
+- Lists my core technologies including React, Node.js, MongoDB, JavaScript, Next.js and more
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🎓 Education & Certification
+- BSc in CSE, Metropolitan University, 2023-2027
+- Web Development Course Completion Certificate, Programming Hero, 2025
 
-## Deploy on Vercel
+### 💼 Projects
+- Highlighting projects that demonstrate skills, creativity and impact.
+- Each project includes description, features, tech stack, challenges and future plans
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📬 Contact
+- Users can reach out to me via a contact form
+- Integrated with **EmailJS** to send messages directly to my inbox
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, TypeScript, Tailwind CSS 
+- **Deployment:** Vercel  
+- **Others:** EmailJS, Framer motion, Sweet alert, Lucide react
+
+---
+
+## 📸 Live Demo
+
+🔗 [Visit Portfolio Website]()
+
+---
+
+## Contact
+
++8801610627131
+tahmidkhan0011@gmail.com
