@@ -23,9 +23,7 @@ const Education = () => {
               </p>
               <p className="mt-3 mb-7">
                 I’m currently pursuing my Bachelor’s degree with a focus on web
-                development and problem-solving. I actively build full-stack
-                projects using the MERN stack and continuously improve my skills
-                through hands-on learning.
+                development and problem-solving. At my university, I work on course-related projects, participate in coding contests and collaborate with peers, while also building web development projects to strengthen my skills.
               </p>
               <p className="text-sm mt-1 font-semibold">2023 - 2027</p>
             </div>
