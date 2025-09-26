@@ -1,18 +1,38 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [activeHash, setActiveHash] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const updateHash = () => setActiveHash(window.location.hash);
-    updateHash(); 
+    updateHash();
     window.addEventListener("hashchange", updateHash);
     return () => window.removeEventListener("hashchange", updateHash);
   }, []);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    }
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isOpen]);
 
   if (pathname.startsWith("/projects-details/")) {
     return null;
@@ -84,9 +104,7 @@ export default function Navbar() {
         <a
           href="#contact"
           className={`font-semibold pb-1 ${
-            activeHash === "#contact"
-              ? "border-b-2 border-blue-500 "
-              : ""
+            activeHash === "#contact" ? "border-b-2 border-blue-500 " : ""
           } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
         >
           Contact
@@ -99,7 +117,10 @@ export default function Navbar() {
     <div className="navbar sticky top-0 z-50 bg-background/55 backdrop-blur-md text-white">
       <div className="max-w-[1350px] mx-auto w-full flex justify-between items-center px-4 md:px-3">
         {/* Left side */}
-        <Link href="/" className="text-xl -ml-1 md:-ml-0.5 lg:-ml-0 font-bold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">
+        <Link
+          href="/"
+          className="text-xl -ml-1 md:-ml-0.5 lg:-ml-0 font-bold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent"
+        >
           Portfolio
         </Link>
 
@@ -108,12 +129,16 @@ export default function Navbar() {
           <ul className="hidden lg:flex gap-5">{links}</ul>
 
           {/* Mobile menu */}
-          <div className="lg:hidden dropdown dropdown-end -mx-1.5">
-            <label tabIndex={0} className="">
-              {/* Hamburger Icon */}
+          <div className="lg:hidden relative -mr-1" ref={menuRef}>
+            {/* Hamburger Icon */}
+            <label
+              tabIndex={0}
+              className="cursor-pointer"
+              onClick={() => setIsOpen((prev) => !prev)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6 w-6 text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -126,12 +151,16 @@ export default function Navbar() {
                 />
               </svg>
             </label>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 w-52 p-2 shadow bg-base-100 rounded-box z-[1]"
-            >
-              {links}
-            </ul>
+
+            {/* Dropdown menu */}
+            {isOpen && (
+              <ul
+                tabIndex={0}
+                className="absolute right-0 mt-3 w-60 p-4 rounded-2xl shadow-lg bg-[#1c222a] flex flex-col gap-4 z-50"
+              >
+                {links}
+              </ul>
+            )}
           </div>
         </div>
       </div>
