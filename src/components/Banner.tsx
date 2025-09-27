@@ -64,10 +64,10 @@ export default function Banner() {
             <div className="p-2 bg-gray-800 rounded-full"><a href="https://www.facebook.com/tahmid.khan.35762241" target="_blank" rel="noreferrer">
               <FaFacebook className="hover:text-blue-400 transition-colors" />
             </a></div>
-            <div className="p-2 bg-gray-800 rounded-full"><a href="https://github.com" target="_blank" rel="noreferrer">
+            <div className="p-2 bg-gray-800 rounded-full"><a href="https://github.com/tahmid-khan-hub" target="_blank" rel="noreferrer">
               <FaGithub className="hover:text-blue-400 transition-colors" />
             </a></div>
-            <div className="p-2 bg-gray-800 rounded-full"><a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <div className="p-2 bg-gray-800 rounded-full"><a href="https://www.linkedin.com/in/tahmid-khan-/" target="_blank" rel="noreferrer">
               <FaLinkedin className="hover:text-blue-400 transition-colors" />
             </a></div>
             <div className="p-2 bg-gray-800 rounded-full"><a href="https://codeforces.com/profile/Tahmid.bd" target="_blank" rel="noreferrer">
