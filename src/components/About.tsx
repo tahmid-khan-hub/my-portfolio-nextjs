@@ -8,7 +8,7 @@ const About = () => {
     <section className="w-full flex justify-center py-20 pb-24 mb-24 px-4 md:px-3">
       <div className="max-w-[1330px] w-full flex flex-col md:flex-row items-center justify-between">
         {/* Image */}
-        <div className="flex justify-center md:justify-start flex-shrink-0 ">
+        <AnimateOnView direction="left" delay={0.8} duration={1}><div className="flex justify-center md:justify-start flex-shrink-0 ">
           <Image
             src="/my-photo.png" 
             alt="About Me"
@@ -16,7 +16,7 @@ const About = () => {
             height={230}
             className="rounded-2xl object-cover shadow-lg"
           />
-        </div>
+        </div></AnimateOnView>
 
         {/* Text */}
         <div className="space-y-4 max-w-[900px] ml-0 md:ml-7 ">

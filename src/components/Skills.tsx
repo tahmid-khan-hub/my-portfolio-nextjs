@@ -1,8 +1,10 @@
 "use client";
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGithub, FaDatabase, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiTypescript, SiMongodb, SiExpress, SiNextdotjs, SiVercel } from "react-icons/si";
 import { motion } from "framer-motion";
 import { IoLogoFirebase } from "react-icons/io5";
+import { BiLogoPostgresql } from "react-icons/bi";
+import AnimateOnView from "@/hooks/AnimateOnView";
 
 const skills = [
   { id: 1, title: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
@@ -17,7 +19,10 @@ const skills = [
   { id: 10, title: "Next.js", icon: <SiNextdotjs className="text-white" /> },
   { id: 11, title: "Vercel", icon: <SiVercel className="text-white" /> },
   { id:12, title: "Firebase", icon: <IoLogoFirebase className="text-orange-400" />},
-  { id:13, title: "GitHub", icon: <FaGithub className="text-white" />},
+  { id:13, title: "SQL", icon: <FaDatabase className="text-white" />},
+  { id:14, title: "PostgreSQL", icon: <BiLogoPostgresql className="text-blue-500" />},
+  { id:15, title: "Git", icon: <FaGitAlt className="text-orange-400" />},
+  { id:16, title: "GitHub", icon: <FaGithub className="text-white" />},
 ];
 
 const Skills = () => {
@@ -29,8 +34,8 @@ const Skills = () => {
         </h2>
 
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-8 text-center">
-          {skills.map((skill) => (
-            <motion.div
+          {skills.map((skill, i) => (
+            <AnimateOnView key={i} direction="up" delay={i * 0.08}><motion.div
               whileHover={{
               scale: 1.1, 
               boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.7)",
@@ -41,7 +46,7 @@ const Skills = () => {
             >
               <div className="text-5xl mb-3">{skill.icon}</div>
               <p className="text-gray-200 font-medium">{skill.title}</p>
-            </motion.div>
+            </motion.div></AnimateOnView>
           ))}
         </div>
       </div>
