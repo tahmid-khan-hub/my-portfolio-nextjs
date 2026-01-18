@@ -31,7 +31,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     id: 5,
-    href: "https://www.codechef.com/users/YOUR_USERNAME",
+    href: "https://www.codechef.com/users/tahmid04",
     icon: SiCodechef,
   },
 ];
