@@ -2,8 +2,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiCodeforces } from "react-icons/si";
+import { socialLinks } from "@/constants/socialLinks";
+import AnimateOnView from "@/hooks/AnimateOnView";
 
 export default function Banner() {
 
@@ -15,9 +15,11 @@ export default function Banner() {
         
         {/* Left Side */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            Hi, I’m <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Tahmid</span>
-          </h1>
+          <div>
+            <AnimateOnView direction="down" delay={0.1} duration={0.6}>
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">Hi, I’m <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Tahmid</span></h1>
+            </AnimateOnView>
+          </div>
 
           {/* Type Animation */}
           <TypeAnimation
@@ -38,41 +40,49 @@ export default function Banner() {
           />
 
           {/* Paragraphs */}
-          <p className="text-gray-300 mb-4 max-w-xl">
-            I’m a university student who builds responsive and user-friendly websites
-            using modern web technologies.
-          </p>
-          <p className="text-gray-300 mb-6 max-w-xl">
-            My goal is to become a software engineer, exploring Next.js,
-            building scalable and modern applications.
-          </p>
+          <div>
+            <AnimateOnView direction="left" delay={0.1} duration={0.6}>
+              <p className="text-gray-300 mb-6 max-w-xl">I’m a university student who builds responsive and user-friendly websites using modern web technologies.</p>
+            </AnimateOnView>
+            <AnimateOnView direction="left" delay={0.1} duration={1.2}>
+              <p className="text-gray-300 mb-6 max-w-xl">My goal is to become a software engineer, exploring Next.js, building scalable and modern applications.</p>
+            </AnimateOnView>
+          </div>
 
           {/* Buttons */}
           <div className="flex gap-4 mb-6 w-full sm:w-auto justify-center md:justify-start">
-            <button
-             onClick={() => window.open(ResumeLink, "_blank")} 
-             className="px-6 py-2.5 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-400 hover:from-blue-900 hover:to-blue-800 transition rounded-xl font-medium">
+            <AnimateOnView direction="up" delay={0.1} duration={0.6}>
+              <button
+                onClick={() => window.open(ResumeLink, "_blank")}
+                className="px-6 py-2.5 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-400 hover:from-blue-900 hover:to-blue-800 transition rounded-xl font-medium"
+              >
                 Resume
-            </button>
-            <a href="#projects"><button className="px-6 py-2.5 bg-gradient-to-r border text-blue-500 hover:text-white hover:border-blue-700 hover:from-blue-800 hover:to-blue-700 transition rounded-xl font-medium">
-                My Work
-            </button></a>
+              </button>
+            </AnimateOnView>
+            <AnimateOnView direction="up" delay={0.25} duration={0.6}>
+              <a href="#projects">
+                <button
+                  className="px-6 py-2.5 bg-gradient-to-r border text-blue-500 hover:text-white hover:border-blue-700 hover:from-blue-800 hover:to-blue-700 transition rounded-xl font-medium"
+                >
+                  My Work
+                </button>
+              </a>
+            </AnimateOnView>
           </div>
 
           {/* Social Icons */}
           <div className="flex gap-6 text-2xl justify-center md:justify-start mt-2">
-            <div className="p-2 bg-gray-800 rounded-full"><a href="https://www.facebook.com/tahmid.khan.35762241" target="_blank" rel="noreferrer">
-              <FaFacebook className="hover:text-blue-400 transition-colors" />
-            </a></div>
-            <div className="p-2 bg-gray-800 rounded-full"><a href="https://github.com/tahmid-khan-hub" target="_blank" rel="noreferrer">
-              <FaGithub className="hover:text-blue-400 transition-colors" />
-            </a></div>
-            <div className="p-2 bg-gray-800 rounded-full"><a href="https://www.linkedin.com/in/tahmid-khan-/" target="_blank" rel="noreferrer">
-              <FaLinkedin className="hover:text-blue-400 transition-colors" />
-            </a></div>
-            <div className="p-2 bg-gray-800 rounded-full"><a href="https://codeforces.com/profile/Tahmid.bd" target="_blank" rel="noreferrer">
-              <SiCodeforces className="hover:text-blue-400 transition-colors" />
-            </a></div>
+            {socialLinks.map(({ id, href, icon: Icon }) => (
+              <AnimateOnView key={id} direction="up" delay={id * 0.08}>
+                <div key={id}
+                  className="p-2 bg-gray-800 rounded-full transition-transform duration-200 hover:scale-110 hover:shadow-md shadow-blue-300"
+                >
+                  <a href={href} target="_blank" rel="noreferrer">
+                    <Icon className="hover:text-blue-400 transition-colors" />
+                  </a>
+                </div>
+              </AnimateOnView>
+            ))}
           </div>
         </div>
 
