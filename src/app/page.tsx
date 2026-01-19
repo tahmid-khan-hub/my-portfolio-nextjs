@@ -1,6 +1,6 @@
 import About from "@/components/About";
 import Banner from "@/components/Banner";
-import Contact from "@/components/Contact";
+import Contact from "@/components/Contact/Contact";
 import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";

@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
 import CertificateCard from "./CertificateCard";
+import AnimateOnView from "@/hooks/AnimateOnView";
 
 const Education = () => {
   return (
     <div>
       <div className="max-w-[1350px] mx-auto px-4 md:px-3 py-16 mb-24">
-        <h1 className="text-center text-4xl font-bold mb-12">
+        <AnimateOnView direction="down" delay={0.25} duration={0.6}><h1 className="text-center text-4xl font-bold mb-12">
           Education & <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Certification</span>
-        </h1>
+        </h1></AnimateOnView>
 
         {/* Responsive layout: column on small, row on md+ */}
         <div className="flex flex-col md:flex-row md:items-start gap-8">
