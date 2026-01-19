@@ -1,7 +1,7 @@
-
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { contactLinks } from "@/constants/contactLinks";
+import { contactInfo } from "@/constants/contactInfo";
+import AnimateOnView from "@/hooks/AnimateOnView";
 
 const ContactLeftSide = () => {
   return (
@@ -12,49 +12,27 @@ const ContactLeftSide = () => {
         always open to discussing projects or opportunities.
       </p>
 
+      {/* contact information */}
       <div className="space-y-4 mb-8">
-        {/* location */}
-        <div className="flex items-center gap-3">
-          <div className="p-2 rounded-full bg-gray-800">
-            <FaMapMarkerAlt className="text-blue-400 hover:text-blue-300 text-xl" />
+        {contactInfo.map(({id, icon: Icon, heading, info}) => (
+          <div key={id} className="flex items-center gap-3">
+            <AnimateOnView key={id} direction="left" delay={id * 0.08}><motion.div whileHover={{ scale: 1.1, boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.7)", }}
+            transition={{ duration: 0 }} 
+            className="p-2 rounded-full bg-gray-800">
+              <Icon className="text-blue-400 hover:text-blue-300 text-xl" />
+            </motion.div></AnimateOnView>
+            <div className="ml-2">
+              <h5 className="text-lg font-semibold">{heading}</h5>
+              <p className="text-sm text-gray-400 font-semibold">{info}</p>
+            </div>
           </div>
-          <div className="ml-2">
-            <h5 className="text-lg font-semibold">Location</h5>
-            <p className="text-sm text-gray-400 font-semibold">
-              Sylhet, Bangladesh
-            </p>
-          </div>
-        </div>
-        {/* email */}
-        <div className="flex items-center gap-3">
-          <div className="p-2 rounded-full bg-gray-800">
-            <FaEnvelope className="text-blue-400 hover:text-blue-300 text-xl" />
-          </div>
-          <div className="ml-2">
-            <h5 className="text-lg font-semibold">Email</h5>
-            <p className="text-sm text-gray-400 font-semibold">
-              tahmidkhan0011@gmail.com
-            </p>
-          </div>
-        </div>
-        {/* phone */}
-        <div className="flex items-center gap-3">
-          <div className="p-2 rounded-full bg-gray-800">
-            <FaPhoneAlt className="text-blue-400 hover:text-blue-300 text-xl" />
-          </div>
-          <div className="ml-2">
-            <h5 className="text-lg font-semibold">Phone</h5>
-            <p className="text-sm text-gray-400 font-semibold">
-              +8801610627131
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
 
       <h3 className="text-xl font-bold mb-3">Follow Me</h3>
       <div className="flex gap-5 text-2xl text-white mb-3">
         {contactLinks.map(({id, href, icon: Icon}) => (
-          <motion.div key={id}
+          <AnimateOnView key={id} direction="up" delay={id * 0.08}><motion.div key={id}
           whileHover={{ scale: 1.1, boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.7)", }}
           transition={{ duration: 0 }}
           className="p-2 rounded-full bg-gray-800">
@@ -65,7 +43,7 @@ const ContactLeftSide = () => {
           >
             <Icon className="transition-colors" />
           </a>
-          </motion.div>
+          </motion.div></AnimateOnView>
         ))}
       </div>
     </div>

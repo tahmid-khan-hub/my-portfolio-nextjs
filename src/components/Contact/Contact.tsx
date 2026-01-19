@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import ContactLeftSide from "./components/ContactLeftSide";
 import ContactFormFields from "./components/ContactFormFields";
+import AnimateOnView from "@/hooks/AnimateOnView";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -50,12 +51,12 @@ const Contact = () => {
   return (
     <div className="bg-[#0c1220]">
       <div className="w-full py-16 px-6 md:px-3">
-        <h1 className="text-center text-4xl font-bold mb-20">
+        <AnimateOnView direction="down" delay={0.25} duration={0.6}><h1 className="text-center text-4xl font-bold mb-20">
           Get in{" "}
           <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">
             Touch
           </span>
-        </h1>
+        </h1></AnimateOnView>
         <div className="max-w-[1330px] mx-auto grid md:grid-cols-2 gap-12">
 
           {/* Left Side */}
