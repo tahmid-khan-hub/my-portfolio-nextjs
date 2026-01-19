@@ -1,6 +1,7 @@
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { contactLinks } from "@/constants/contactLinks";
 
 const ContactLeftSide = () => {
   return (
@@ -52,57 +53,20 @@ const ContactLeftSide = () => {
 
       <h3 className="text-xl font-bold mb-3">Follow Me</h3>
       <div className="flex gap-5 text-2xl text-white mb-3">
-        {/* facebook */}
-        <motion.div
-          whileHover={{
-            scale: 1.1,
-            boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.7)",
-          }}
+        {contactLinks.map(({id, href, icon: Icon}) => (
+          <motion.div key={id}
+          whileHover={{ scale: 1.1, boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.7)", }}
           transition={{ duration: 0 }}
-          className="p-2 rounded-full bg-gray-800"
-        >
-          <a
-            href="https://www.facebook.com/tahmid.khan.35762241"
+          className="p-2 rounded-full bg-gray-800">
+            <a
+            href={href}
             target="_blank"
             rel="noreferrer"
           >
-            <FaFacebook className="transition-colors" />
+            <Icon className="transition-colors" />
           </a>
-        </motion.div>
-        {/* linkedIn */}
-        <motion.div
-          whileHover={{
-            scale: 1.1,
-            boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.7)",
-          }}
-          transition={{ duration: 0 }}
-          className="p-2 rounded-full bg-gray-800"
-        >
-          <a
-            href="https://www.linkedin.com/in/tahmid-khan-/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedin className="transition-colors" />
-          </a>
-        </motion.div>
-        {/* gitHub */}
-        <motion.div
-          whileHover={{
-            scale: 1.1,
-            boxShadow: "0px 0px 20px rgba(0, 123, 255, 0.7)",
-          }}
-          transition={{ duration: 0 }}
-          className="p-2 rounded-full bg-gray-800"
-        >
-          <a
-            href="https://github.com/tahmid-khan-hub"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGithub className="transition-colors" />
-          </a>
-        </motion.div>
+          </motion.div>
+        ))}
       </div>
     </div>
   );
