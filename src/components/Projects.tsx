@@ -1,99 +1,22 @@
 "use client";
+import { projectData } from "@/constants/projectsData";
+import AnimateOnView from "@/hooks/AnimateOnView";
 import Image from "next/image";
 import Link from "next/link";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const projectsData = [
-  {
-    id: "1",
-    title: "ThreadQube",
-    image: "https://i.ibb.co/rKWWk7Fr/thread-banner.png",
-    description:
-      "ThreadQube is a MERN-based forum that lets users share and engage with posts, with premium options and clear admin management. It supports easy discussions while keeping the community connected and moderated.",
-    url: "https://thread-qube-app.netlify.app",
-    technologies: [
-      "React.js",
-      "Tailwind",
-      "CSS",
-      "JavaScript",
-      "MongoDB",
-      "Firebase",
-      "JWT Token",
-      "Node.js",
-      "Express.js",
-      "Stripe",
-      "Tan Stack Query",
-      "React hook form",
-    ],
-    gitHub_client: "https://github.com/tahmid-khan-hub/Thread-Qube",
-    gitHub_server: "https://github.com/tahmid-khan-hub/Thread-Qube-Server",
-  },
-  {
-    id: "2",
-    title: "NexUScore",
-    image: "https://i.ibb.co/sdkNqSz6/image.png",
-    description:
-      "NexUSCore is an educational platform where users can explore and enroll in a variety of courses. Enroll in your desired courses and level up your skills on your schedule.",
-    url: "https://nexuscore-app.netlify.app",
-    technologies: [
-      "React.js",
-      "Tailwind",
-      "CSS",
-      "JavaScript",
-      "MongoDB",
-      "Firebase",
-      "JWT Token",
-      "Node.js",
-      "Express.js",
-      "Stripe",
-    ],
-    gitHub_server: "https://github.com/tahmid-khan-hub/NexUsCore-server",
-    gitHub_client: "https://github.com/tahmid-khan-hub/Nexus-Core",
-  },
-  {
-    id: "3",
-    title: "EventExplorar",
-    image: "https://i.ibb.co/6jJhcgC/image.png",
-    description:
-      "EventExplorar helps you discover and enjoy events around you with ease and excitement. Stay updated on upcoming programs, workshops, and festivals tailored to your interests.",
-    url: "http://sprightly-torte-9a8d5c.netlify.app",
-    technologies: ["React.js", "Tailwind", "JavaScript", "CSS", "Firebase"],
-    gitHub_client: "https://github.com/tahmid-khan-hub/Event-Explorar",
-  },
-  {
-    id: "4",
-    title: "RecipeBook",
-    image: "https://i.ibb.co/v6d1rKdF/image.png",
-    description:
-      "RecipeBook brings delicious recipes to your fingertips, making cooking easy and fun for everyone. Explore a wide range of recipes with step-by-step instructions and beautiful visuals.",
-    url: "https://comforting-pasca-4e92c6.netlify.app/",
-    technologies: [
-      "React.js",
-      "Tailwind",
-      "CSS",
-      "JavaScript",
-      "MongoDB",
-      "Firebase",
-      "Node.js",
-      "Express.js",
-    ],
-    gitHub_server: "https://github.com/tahmid-khan-hub/Recipe-Book-Server",
-    gitHub_client: "https://github.com/tahmid-khan-hub/Recipe-Book",
-  },
-];
-
 export default function Projects() {
   return (
     <section className="w-full text-white py-16 mb-24">
       <div className="max-w-[1350px] mx-auto px-4 md:px-3">
-        <h2 className="text-4xl font-bold mb-12 text-center">My <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Projects</span></h2>
+        <AnimateOnView direction="down" delay={0.25} duration={0.6}><h2 className="text-4xl font-bold mb-12 text-center">My <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Projects</span></h2></AnimateOnView>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {projectsData.map((project, index) => (
-            <div
+          {projectData.map((project, index) => (
+            <AnimateOnView key={index} direction="left" delay={index * 0.08}><div
               key={index}
-              className="bg-gray-900 rounded-xl overflow-hidden shadow-lg flex flex-col"
+              className="bg-gray-900 rounded-xl overflow-hidden shadow-2xl flex flex-col h-full hover:bg-gray-950"
             >
               {/* Image */}
               <div className="p-2">
@@ -136,7 +59,7 @@ export default function Projects() {
                     href={project.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1 hover:text-blue-400 transition"
+                    className="flex items-center gap-1 hover:text-blue-400 transition-transform duration-200 hover:scale-107"
                   >
                     <FaExternalLinkAlt /> Live
                   </a>
@@ -144,7 +67,7 @@ export default function Projects() {
                     href={project.gitHub_client}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1 hover:text-blue-400 transition"
+                    className="flex items-center gap-1 hover:text-blue-400 transition-transform duration-200 hover:scale-107"
                   >
                     <FaGithub /> Client
                   </a>
@@ -153,7 +76,7 @@ export default function Projects() {
                       href={project.gitHub_server}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center gap-1 hover:text-blue-400 transition"
+                      className="flex items-center gap-1 hover:text-blue-400 transition-transform duration-200 hover:scale-107"
                     >
                       <FaGithub /> Server
                     </a>
@@ -161,11 +84,11 @@ export default function Projects() {
                 </div>
 
                 {/* details */}
-                <Link href={`/projects-details/${project.id}`}><button className="text-blue-500 hover:text-blue-400 text-xl transition">
+                <Link href={`/projects-details/${project.id}`}><button className="text-blue-500 hover:text-blue-400 text-xl transition-transform duration-200 hover:scale-120 ">
                   <FaArrowRightLong size={25} className="-mb-1.5"/>
                 </button></Link>
               </div>
-            </div>
+            </div></AnimateOnView>
           ))}
         </div>
       </div>

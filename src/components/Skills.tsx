@@ -29,9 +29,9 @@ const Skills = () => {
   return (
     <section className="w-full bg-[#0c1220] flex justify-center py-12 mt-16 mb-24 px-4 md:px-3 lg:px-4 ">
       <div className="max-w-[1330px] w-full py-[54px]">
-        <h2 className="text-4xl font-bold text-center mb-10 text-gray-900 dark:text-white">
+        <AnimateOnView direction="down" delay={0.25} duration={0.6}><h2 className="text-4xl font-bold text-center mb-10 text-gray-900 dark:text-white">
           Skills & <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Tools</span>
-        </h2>
+        </h2></AnimateOnView>
 
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-8 text-center">
           {skills.map((skill, i) => (
@@ -42,7 +42,7 @@ const Skills = () => {
               }}
               transition={{ duration: 0 }}
               key={skill.id}
-              className="flex flex-col items-center justify-center p-4 rounded-xl shadow-md bg-gray-800 hover:bg-gray-700 transition duration-300"
+              className="flex flex-col items-center justify-center p-4 rounded-xl shadow-md bg-gray-800 hover:bg-gray-700 transition duration-300 h-full"
             >
               <div className="text-5xl mb-3">{skill.icon}</div>
               <p className="text-gray-200 font-medium">{skill.title}</p>
