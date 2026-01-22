@@ -20,18 +20,18 @@ const About = () => {
 
         {/* Text */}
         <div className="space-y-4 max-w-[900px] ml-0 md:ml-7 ">
-          <AnimateOnView direction="down" delay={0.25} duration={0.6}><h2 className="text-4xl font-bold text-gray-900 dark:text-white mt-14 md:mt-0 mb-7 text-center md:text-left">
+          <AnimateOnView direction="down" delay={0.25} duration={0.6}><h2 className="text-4xl font-bold text-white mt-14 md:mt-0 mb-7 text-center md:text-left">
             About <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Me</span>
           </h2></AnimateOnView>
 
           {/* 1 */}
-          <AnimateOnView direction="left" delay={0.25} duration={0.6}><p className="text-gray-700 dark:text-gray-300 leading-relaxed ">
+          <AnimateOnView direction="left" delay={0.25} duration={0.6}><p className="text-gray-300 leading-relaxed ">
             I&apos;m a passionate <span className="font-bold mr-1">Web developer</span> 
              who loves building efficient, scalable and modern web applications.
           </p></AnimateOnView>
 
           {/* 2 */}
-          <AnimateOnView direction="right" delay={0.25} duration={0.6}><p className="text-gray-700 dark:text-gray-300 leading-relaxed ">
+          <AnimateOnView direction="right" delay={0.25} duration={0.6}><p className="text-gray-300 leading-relaxed ">
             Currently, I&apos;m pursuing a degree in{" "}
             <span className="font-bold mr-1">Computer Science & Engineering</span> 
             at <span className="font-bold mr-1">Metropolitan University</span>, 
@@ -39,17 +39,17 @@ const About = () => {
           </p></AnimateOnView>
 
           {/* 3 */}
-          <AnimateOnView direction="left" delay={0.25} duration={0.6}><p className="text-gray-700 dark:text-gray-300 leading-relaxed ">
+          <AnimateOnView direction="left" delay={0.25} duration={0.6}><p className="text-gray-300 leading-relaxed ">
            I enjoy <span className="font-bold mr-1">solving problems</span> through code and continuously expanding my knowledge in both frontend and backend technologies. With every project, I aim to write clean, maintainable code and design <span className="font-bold mr-1">user-friendly</span> interfaces that make a lasting impact.
           </p></AnimateOnView>
 
           {/* journey glimpse */}
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-12 md:mt-5 font-semibold">
+          <p className="text-gray-300 leading-relaxed mt-12 md:mt-5 font-semibold">
             Some highlights of my journey so far:
           </p> 
 
           {/* bullet points */}
-          <ul className="list-disc pl-6 space-y-2 text-gray-700 dark:text-gray-300 ">
+          <ul className="list-disc pl-6 space-y-2 text-gray-400 ">
             {bulletPoints.map(({id, text}) => (
               <AnimateOnView key={id} direction="right" delay={id * 0.08}>
                 <li>{text}</li>
