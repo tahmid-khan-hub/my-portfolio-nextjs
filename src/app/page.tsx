@@ -7,7 +7,7 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <div id="banner"><Banner></Banner></div>
       <div id="about"><About></About></div>
       <div id="skills"><Skills></Skills></div>
