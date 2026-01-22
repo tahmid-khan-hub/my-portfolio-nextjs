@@ -9,13 +9,11 @@ export const metadata: Metadata = {
   title: "Portfolio | Project-Details",
 };
 
-export default async function ProjectDetails({params}: { params: { id: string } }) {
+export default async function ProjectDetails({ params, }: { params: Promise<{ id: string }> }) {
 
-    const project = ProjectData.find((p) => p.id === params.id);
-
-    if(!project){
-       return <Loading></Loading>;
-    }
+    const { id } = await params;
+    const project = ProjectData.find((p) => p.id === Number(id));
+    if(!project) return <Loading></Loading>;
 
     return <div className="bg-[#0c1220] pb-10">
         <div className="max-w-[1350px] mx-auto px-4 md:px-3 ">

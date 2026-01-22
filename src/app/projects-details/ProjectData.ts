@@ -1,6 +1,6 @@
 
 export type Project = {
-  id: string;
+  id: number;
   title: string;
   image: string;
   description: string;
@@ -13,7 +13,7 @@ export type Project = {
 
 export const ProjectData: Project[] = [
   {
-    id: "1",
+    id: 1,
     title: "ThreadQube",
     image: "https://i.ibb.co/rKWWk7Fr/thread-banner.png",
     description:
@@ -49,7 +49,7 @@ export const ProjectData: Project[] = [
       "Track revenue from membership subscriptions in the admin dashboard. Premium users gain extended privileges such as editing posts. Real-time notifications for comments and likes",
   },
   {
-    id: "2",
+    id: 2,
     title: "NexUScore",
     image: "https://i.ibb.co/sdkNqSz6/image.png",
     description:
@@ -80,7 +80,7 @@ export const ProjectData: Project[] = [
       "Add real-time messaging between instructors and students, and implement progress-based certificates.",
   },
   {
-    id: "3",
+    id: 3,
     title: "EventExplorar",
     image: "https://i.ibb.co/6jJhcgC/image.png",
     description:
@@ -100,7 +100,7 @@ export const ProjectData: Project[] = [
       "In the future, I plan to add a role-based dashboard where users and organizers can manage events, view bookings, and post their own events.",
   },
   {
-    id: "4",
+    id: 4,
     title: "RecipeBook",
     image: "https://i.ibb.co/v6d1rKdF/image.png",
     description:
