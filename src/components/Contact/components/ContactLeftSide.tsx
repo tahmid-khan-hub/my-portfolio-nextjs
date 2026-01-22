@@ -6,7 +6,7 @@ import AnimateOnView from "@/hooks/AnimateOnView";
 const ContactLeftSide = () => {
   return (
     <div>
-      <h2 className="text-3xl font-bold mb-7">Contact Information</h2>
+      <h2 className="text-3xl text-gray-300 font-bold mb-7">Contact Information</h2>
       <p className="text-gray-300 mb-6 ">
         Feel free to reach out to me via email, phone or through the form. I’m
         always open to discussing projects or opportunities.
@@ -22,14 +22,14 @@ const ContactLeftSide = () => {
               <Icon className="text-blue-400 hover:text-blue-300 text-xl" />
             </motion.div></AnimateOnView>
             <div className="ml-2">
-              <h5 className="text-lg font-semibold">{heading}</h5>
+              <h5 className="text-lg text-gray-400 font-semibold">{heading}</h5>
               <p className="text-sm text-gray-400 font-semibold">{info}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <h3 className="text-xl font-bold mb-3">Follow Me</h3>
+      <h3 className="text-xl text-gray-300 font-bold mb-3">Follow Me</h3>
       <div className="flex gap-5 text-2xl text-white mb-3">
         {contactLinks.map(({id, href, icon: Icon}) => (
           <AnimateOnView key={id} direction="up" delay={id * 0.08}><motion.div key={id}

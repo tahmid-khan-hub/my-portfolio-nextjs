@@ -51,7 +51,7 @@ const Contact = () => {
   return (
     <div className="bg-[#0c1220]">
       <div className="w-full py-16 px-6 md:px-3">
-        <AnimateOnView direction="down" delay={0.25} duration={0.6}><h1 className="text-center text-4xl font-bold mb-20">
+        <AnimateOnView direction="down" delay={0.25} duration={0.6}><h1 className="text-center text-4xl text-gray-300 font-bold mb-20">
           Get in{" "}
           <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">
             Touch
@@ -64,7 +64,7 @@ const Contact = () => {
 
           {/* Right Side */}
           <div className=" rounded-2xl ">
-            <h2 className="text-3xl font-bold mb-8">Send me a message</h2>
+            <h2 className="text-3xl text-gray-300 font-bold mb-8">Send me a message</h2>
             <form ref={form} onSubmit={sendEmail} >
               <ContactFormFields />
             </form>
