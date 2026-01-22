@@ -9,14 +9,14 @@ const ContactFormFields = () => {
           type="text"
           name="name"
           placeholder="Your Name"
-          className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500 hover:bg-gray-900 border border-gray-700"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
-          className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500 hover:bg-gray-900 border border-gray-700"
           required
         />
       </div>
@@ -26,7 +26,7 @@ const ContactFormFields = () => {
         type="text"
         name="title"
         placeholder="Subject"
-        className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500 hover:bg-gray-900 border border-gray-700"
       />
 
       {/* Message */}
@@ -34,7 +34,7 @@ const ContactFormFields = () => {
         name="message"
         placeholder="Message"
         rows={6}
-        className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full bg-gray-800 rounded-lg px-4 py-3 font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500 hover:bg-gray-900 border border-gray-700"
         required
       ></textarea>
 

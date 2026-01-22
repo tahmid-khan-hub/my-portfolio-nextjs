@@ -54,7 +54,7 @@ export default function Banner() {
             <AnimateOnView direction="up" delay={0.1} duration={0.6}>
               <button
                 onClick={() => window.open(ResumeLink, "_blank")}
-                className="px-6 py-2.5 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-400 hover:from-blue-900 hover:to-blue-800 transition rounded-xl font-medium"
+                className="px-6 py-2.5 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-400 hover:from-blue-900 hover:to-blue-800 transition-transform duration-200 hover:scale-103 active:scale-95 rounded-xl font-medium"
               >
                 Resume
               </button>
@@ -62,7 +62,7 @@ export default function Banner() {
             <AnimateOnView direction="up" delay={0.25} duration={0.6}>
               <a href="#projects">
                 <button
-                  className="px-6 py-2.5 bg-gradient-to-r border text-blue-500 hover:text-white hover:border-blue-700 hover:from-blue-800 hover:to-blue-700 transition rounded-xl font-medium"
+                  className="px-6 py-2.5 bg-gradient-to-r border text-blue-500 hover:text-white hover:border-blue-700 hover:from-blue-800 hover:to-blue-700 transition-transform duration-200 hover:scale-103 active:scale-95 rounded-xl font-medium"
                 >
                   My Work
                 </button>
