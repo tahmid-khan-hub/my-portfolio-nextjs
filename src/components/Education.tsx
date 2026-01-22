@@ -7,7 +7,7 @@ const Education = () => {
   return (
     <div>
       <div className="max-w-[1350px] mx-auto px-4 md:px-3 py-16 mb-24">
-        <AnimateOnView direction="down" delay={0.25} duration={0.6}><h1 className="text-center text-4xl font-bold mb-12">
+        <AnimateOnView direction="down" delay={0.25} duration={0.6}><h1 className="text-center text-4xl text-gray-300 font-bold mb-12">
           Education & <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Certification</span>
         </h1></AnimateOnView>
 
@@ -18,15 +18,15 @@ const Education = () => {
             {/* dot */}
             <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2 "></div>
             <div className="p-5 shadow-md">
-              <h3 className="text-lg font-semibold">BSc in CSE</h3>
+              <h3 className="text-lg text-gray-300 font-semibold">BSc in CSE</h3>
               <p className="text-sm text-gray-500">
                 Metropolitan University, Sylhet, Bangladesh
               </p>
-              <p className="mt-3 mb-7">
+              <p className="mt-3 mb-7 text-gray-300">
                 I’m currently pursuing my Bachelor’s degree with a focus on web
                 development and problem-solving. At my university, I work on course-related projects, participate in coding contests and collaborate with peers, while also building web development projects to strengthen my skills.
               </p>
-              <p className="text-sm mt-1 font-semibold">2023 - 2027</p>
+              <p className="text-sm text-gray-500 mt-1 font-semibold">2023 - 2027</p>
             </div>
           </div>
 
