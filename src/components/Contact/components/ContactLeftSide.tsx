@@ -6,11 +6,11 @@ import AnimateOnView from "@/hooks/AnimateOnView";
 const ContactLeftSide = () => {
   return (
     <div>
-      <h2 className="text-3xl text-gray-300 font-bold mb-7">Contact Information</h2>
-      <p className="text-gray-300 mb-6 ">
+      <AnimateOnView direction="scale" delay={0.25} duration={0.6}><h2 className="text-3xl text-gray-300 font-bold mb-7">Contact Information</h2></AnimateOnView>
+      <AnimateOnView direction="up" delay={0.25} duration={0.6}><p className="text-gray-300 mb-6 ">
         Feel free to reach out to me via email, phone or through the form. I’m
         always open to discussing projects or opportunities.
-      </p>
+      </p></AnimateOnView>
 
       {/* contact information */}
       <div className="space-y-4 mb-8">
@@ -22,8 +22,8 @@ const ContactLeftSide = () => {
               <Icon className="text-blue-400 hover:text-blue-300 text-xl" />
             </motion.div></AnimateOnView>
             <div className="ml-2">
-              <h5 className="text-lg text-gray-400 font-semibold">{heading}</h5>
-              <p className="text-sm text-gray-400 font-semibold">{info}</p>
+              <AnimateOnView direction="right" delay={0.25} duration={0.6}><h5 className="text-lg text-gray-400 font-semibold">{heading}</h5></AnimateOnView>
+              <AnimateOnView direction="right" delay={0.35} duration={0.6}><p className="text-sm text-gray-400 font-semibold">{info}</p></AnimateOnView>
             </div>
           </div>
         ))}
