@@ -13,6 +13,16 @@ export interface ProjectData {
 export const projectData: ProjectData[] = [
   {
     id: 1,
+    title: "KitStruck",
+    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769265964/Screenshot_2026-01-24_144003_lmwdfl.png",
+    description:
+      "KitStruck is a full-stack e-commerce platform for browsing and purchasing authentic football jerseys with secure payments and a personalized dashboard. Admins can easily manage products, orders and users, ensuring a smooth shopping experience.",
+    url: "https://kit-struck.vercel.app",
+    technologies: ["Next js", "TypeScript", "PostgreSQL", "Tailwind CSS", "CSS", "Stripe", "NextAuth", "Tan Stack Query", "Axios"],
+    gitHub_client: "https://github.com/tahmid-khan-hub/KitStruck",
+  },
+  {
+    id: 2,
     title: "ThreadQube",
     image: "https://i.ibb.co/rKWWk7Fr/thread-banner.png",
     description:
@@ -36,7 +46,7 @@ export const projectData: ProjectData[] = [
     gitHub_server: "https://github.com/tahmid-khan-hub/Thread-Qube-Server",
   },
   {
-    id: 2,
+    id: 3,
     title: "NexUScore",
     image: "https://i.ibb.co/sdkNqSz6/image.png",
     description:
@@ -58,7 +68,7 @@ export const projectData: ProjectData[] = [
     gitHub_client: "https://github.com/tahmid-khan-hub/Nexus-Core",
   },
   {
-    id: 3,
+    id: 4,
     title: "RecipeBook",
     image: "https://i.ibb.co/v6d1rKdF/image.png",
     description:
@@ -78,7 +88,7 @@ export const projectData: ProjectData[] = [
     gitHub_client: "https://github.com/tahmid-khan-hub/Recipe-Book",
   },
   {
-    id: 4,
+    id: 5,
     title: "EventExplorar",
     image: "https://i.ibb.co/6jJhcgC/image.png",
     description:
