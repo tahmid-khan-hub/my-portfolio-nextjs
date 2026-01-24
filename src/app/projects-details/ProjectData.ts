@@ -14,6 +14,41 @@ export type Project = {
 export const ProjectData: Project[] = [
   {
     id: 1,
+    title: "KitStruck",
+    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769265964/Screenshot_2026-01-24_144003_lmwdfl.png",
+    description:
+      "KitStruck is a full-stack e-commerce platform that allows users to browse and purchase authentic football jerseys, with secure payments and a personalized dashboard. It provides clear admin control for managing products, orders and users while delivering a smooth and reliable shopping experience.",
+    features: [
+      "Secure jersey purchases using Stripe payments or Cash on Delivery (COD)",
+      "Users can submit reviews and feedback",
+      "Built-in support & issue reporting system for users",
+      "Personalized user dashboard to view and manage orders",
+      "Admin dashboard with visual analytics showing total jerseys, revenue, users and reviews",
+      "Visibility into the latest registered users",
+      "Order management system for handling customer orders",
+      "Admin can respond to support requests",
+      "Full product management: add, edit or delete jerseys",
+    ],
+    technologies: [
+      "Next js",
+      "Tailwind CSS",
+      "CSS",
+      "TypeScript",
+      "PostgreSQL",
+      "NextAuth",
+      "Tan Stack Query",
+      "Stripe",
+      "Axios",
+    ],
+    challenges:
+      "Designing a complete e-commerce flow, from product listing to checkout and order management. Integrating PostgreSQL with Next.js for the first time and handling database operations reliably.",
+    whatILearned:
+      "I learned how e-commerce web applications work, including payments and orders. Hands-on experience connecting Next.js with PostgreSQL to build a full-stack, database-driven application.",
+    futurePlans:
+      "Future plan for this project is to add order tracking  (Processing → Shipped → Delivered), Pin delivery location during checkout using maps and Live chat system for instant customer support.",
+  },
+  {
+    id: 2,
     title: "ThreadQube",
     image: "https://i.ibb.co/rKWWk7Fr/thread-banner.png",
     description:
@@ -49,7 +84,7 @@ export const ProjectData: Project[] = [
       "Track revenue from membership subscriptions in the admin dashboard. Premium users gain extended privileges such as editing posts. Real-time notifications for comments and likes",
   },
   {
-    id: 2,
+    id: 3,
     title: "NexUScore",
     image: "https://i.ibb.co/sdkNqSz6/image.png",
     description:
@@ -80,7 +115,7 @@ export const ProjectData: Project[] = [
       "Add real-time messaging between instructors and students, and implement progress-based certificates.",
   },
   {
-    id: 3,
+    id: 4,
     title: "EventExplorar",
     image: "https://i.ibb.co/6jJhcgC/image.png",
     description:
@@ -100,7 +135,7 @@ export const ProjectData: Project[] = [
       "In the future, I plan to add a role-based dashboard where users and organizers can manage events, view bookings, and post their own events.",
   },
   {
-    id: 4,
+    id: 5,
     title: "RecipeBook",
     image: "https://i.ibb.co/v6d1rKdF/image.png",
     description:
