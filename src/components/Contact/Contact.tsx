@@ -64,7 +64,7 @@ const Contact = () => {
 
           {/* Right Side */}
           <div className=" rounded-2xl ">
-            <h2 className="text-3xl text-gray-300 font-bold mb-8">Send me a message</h2>
+            <AnimateOnView direction="scale" delay={0.25} duration={0.6}><h2 className="text-3xl text-gray-300 font-bold mb-8">Send me a message</h2></AnimateOnView>
             <form ref={form} onSubmit={sendEmail} >
               <ContactFormFields />
             </form>
