@@ -7,7 +7,7 @@ import AnimateOnView from "@/hooks/AnimateOnView";
 
 export default function Banner() {
 
-  const ResumeLink = "https://drive.google.com/file/d/1a5gRXtYvR2HSpi5xCsk8M3k6tzPpVDLe/view?usp=sharing";
+  const ResumeLink = "https://drive.google.com/file/d/1Uko2goJqYDguJHy6PjAmWQAjacI8FpBU/view?usp=sharing";
 
   return (
     <section className="w-full bg-[#0c1220] text-white py-16 mb-24 ">
