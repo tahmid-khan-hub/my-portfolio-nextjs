@@ -115,7 +115,7 @@ export const ProjectData: Project[] = [
       "Add real-time messaging between instructors and students, and implement progress-based certificates.",
   },
   {
-    id: 4,
+    id: 5,
     title: "EventExplorar",
     image: "https://i.ibb.co/6jJhcgC/image.png",
     description:
@@ -135,7 +135,7 @@ export const ProjectData: Project[] = [
       "In the future, I plan to add a role-based dashboard where users and organizers can manage events, view bookings, and post their own events.",
   },
   {
-    id: 5,
+    id: 4,
     title: "RecipeBook",
     image: "https://i.ibb.co/v6d1rKdF/image.png",
     description:
