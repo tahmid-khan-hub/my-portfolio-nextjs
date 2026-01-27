@@ -8,7 +8,7 @@ const ProjectsOverview = ({id, title, description, technologies, project_url, gi
   return (
     <>
       {/* Title */}
-      <h3 className="text-xl font-semibold mb-4 pl-3">{title}</h3>
+      <h3 className="text-xl font-semibold mb-4 mt-2 pl-3">{title}</h3>
 
       {/* Description */}
       <p className="text-gray-300 font-semibold text-sm mb-7 pl-3 pr-2">
@@ -20,7 +20,7 @@ const ProjectsOverview = ({id, title, description, technologies, project_url, gi
         {technologies.map((tech, i) => (
           <button
             key={i}
-            className="px-3 py-1 text-xs bg-blue-600/20 text-blue-400 rounded-full hover:bg-blue-600/80 hover:text-blue-200"
+            className="px-3 py-1 text-xs bg-blue-600/20 text-blue-400 rounded-full hover:bg-blue-600/80 hover:text-blue-200 transition-transform duration-200 hover:scale-108"
           >
             {tech}
           </button>
@@ -28,7 +28,7 @@ const ProjectsOverview = ({id, title, description, technologies, project_url, gi
       </div>
 
       {/* Links */}
-      <div className="mt-auto flex justify-between items-end text-lg px-4 pb-5">
+      <div className="mt-auto flex justify-between items-end text-lg px-4 pb-2">
         {/* Left side - links */}
         <div className="flex gap-4">
           <a
