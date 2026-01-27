@@ -17,18 +17,24 @@ export default function Projects() {
           </h2>
         </AnimateOnView>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="flex flex-col space-y-10">
           {projectData.map((project, index) => (
             <AnimateOnView key={index} direction="left" delay={index * 0.08}>
-              <div
-                key={index}
-                className="bg-gray-900 rounded-xl overflow-hidden shadow-2xl flex flex-col h-full hover:bg-gray-950"
-              >
+              <div className="flex flex-col md:flex-row w-full items-stretch p-1 border border-gray-800 rounded-xl">
                 {/* Image */}
-                <ProjectsImageContainer image={project.image} title={project.title}/>
+                <div className="w-full md:w-1/2 flex">
+                  <ProjectsImageContainer
+                    image={project.image}
+                    title={project.title}
+                  />
+                </div>
 
                 {/* project overview */}
-                <ProjectsOverview
+                <div className="w-full md:w-1/2 flex"><div
+                  key={index}
+                  className="flex flex-col h-full"
+                >
+                  <ProjectsOverview
                     id={project.id}
                     title={project.title}
                     description={project.description}
@@ -36,8 +42,8 @@ export default function Projects() {
                     project_url={project.url}
                     github_client_url={project.gitHub_client}
                     github_server_url={project.gitHub_server}
-                />
-
+                  />
+                </div></div>
               </div>
             </AnimateOnView>
           ))}
