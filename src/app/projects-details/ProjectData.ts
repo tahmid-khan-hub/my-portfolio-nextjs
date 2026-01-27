@@ -50,7 +50,7 @@ export const ProjectData: Project[] = [
   {
     id: 2,
     title: "ThreadQube",
-    image: "https://i.ibb.co/rKWWk7Fr/thread-banner.png",
+    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540010/Screenshot_2026-01-28_005220_jwd5vn.png",
     description:
       "ThreadQube is a modern MERN-stack forum platform that fosters community interaction through posts, comments, reactions and announcements. It balances user engagement with strong admin controls, creating a safe and dynamic space for meaningful discussions.",
     features: [
@@ -86,7 +86,7 @@ export const ProjectData: Project[] = [
   {
     id: 3,
     title: "NexUScore",
-    image: "https://i.ibb.co/sdkNqSz6/image.png",
+    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540209/Screenshot_2026-01-28_005625_fxzogq.png",
     description:
       "NexUSCore is a modern educational platform where users can explore and enroll in a wide variety of courses. Designed for flexibility and ease, learners can level up their skills at their own pace. It features interactive course discovery and secure authentication. The platform is fully responsive and optimized for both students and instructors.",
     features: [
@@ -117,7 +117,7 @@ export const ProjectData: Project[] = [
   {
     id: 5,
     title: "EventExplorar",
-    image: "https://i.ibb.co/6jJhcgC/image.png",
+    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540464/Screenshot_2026-01-28_010040_dbq9ry.png",
     description:
       "EventExplorar is your ultimate event discovery platform. Whether it's workshops, festivals, or tech meetups, users can stay informed and engaged with the latest events. Users can book seats for events and manage their enrolled sessions. It is built with a focus on interactivity, smooth animations, and mobile-first design.",
     features: [
@@ -137,7 +137,7 @@ export const ProjectData: Project[] = [
   {
     id: 4,
     title: "RecipeBook",
-    image: "https://i.ibb.co/v6d1rKdF/image.png",
+    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540365/Screenshot_2026-01-28_005901_qqefxu.png",
     description:
       "RecipeBook is a community-driven cooking web app that empowers users to create, explore, and manage recipes with ease. Featuring an elegant interface and personalized dashboards, users can browse others’ recipes, like their favorites, and manage their own culinary creations. Designed with performance, accessibility, and interactivity in mind.",
     features: [
