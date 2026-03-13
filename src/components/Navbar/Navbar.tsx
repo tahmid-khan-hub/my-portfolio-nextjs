@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { NavItems } from "./components/NavItems";
 import { NavLinks } from "./components/NavLinks";
+import { Menu } from "./components/Menu";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -55,13 +56,13 @@ export default function Navbar() {
 
   return (
     <div className="navbar sticky top-0 z-60 bg-background/55 backdrop-blur-md text-white">
-      <div className="max-w-[1350px] mx-auto w-full flex justify-between items-center px-4 md:px-3">
+      <div className="max-w-337.5 mx-auto w-full flex justify-between items-center px-4 md:px-3">
         {/* Left side */}
         <Link
           href="/"
-          className="text-xl -ml-1 md:-ml-0.5 lg:-ml-0 font-bold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent"
+          className="text-xl -ml-1 md:-ml-0.5 lg:ml-0 font-bold bg-linear-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent"
         >
-          Portfolio
+          Tahmid
         </Link>
 
         {/* Right side */}
@@ -70,37 +71,7 @@ export default function Navbar() {
 
           {/* Mobile menu */}
           <div className="lg:hidden relative -mr-1" ref={menuRef}>
-            {/* Hamburger Icon */}
-            <label
-              tabIndex={0}
-              className="cursor-pointer"
-              onClick={() => setIsOpen((prev) => !prev)}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </label>
-
-            {/* Dropdown menu */}
-            {isOpen && (
-              <ul
-                tabIndex={0}
-                className="absolute right-0 mt-3 w-60 p-4 rounded-2xl shadow-lg bg-[#1c222a] flex flex-col gap-4 z-50"
-              >
-                {links}
-              </ul>
-            )}
+            <Menu isOpen={isOpen} links={links} setIsOpen={setIsOpen} />
           </div>
         </div>
       </div>
