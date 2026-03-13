@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { NavItems } from "./components/NavItems";
+import { NavLinks } from "./components/NavLinks";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -40,76 +42,14 @@ export default function Navbar() {
 
   const links = (
     <>
-      <li>
-        <a
-          href="#banner"
-          className={`font-semibold pb-1 border-b-2 border-transparent ${
-            activeHash === "#banner"
-              ? "[border-image:linear-gradient(to_right,#1d4ed8,#3b82f6)_1]"
-              : "border-none"
-          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
-        >
-          Banner
-        </a>
-      </li>
-      <li>
-        <a
-          href="#about"
-          className={`font-semibold pb-1 border-b-2 ${
-            activeHash === "#about"
-              ? "border-transparent [border-image:linear-gradient(to_right,#1d4ed8,#3b82f6)_1]"
-              : "border-none"
-          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
-        >
-          About
-        </a>
-      </li>
-      <li>
-        <a
-          href="#skills"
-          className={`font-semibold pb-1 border-b-2 ${
-            activeHash === "#skills"
-              ? "border-transparent [border-image:linear-gradient(to_right,#1d4ed8,#3b82f6)_1]"
-              : "border-none"
-          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
-        >
-          Skills
-        </a>
-      </li>
-      <li>
-        <a
-          href="#projects"
-          className={`font-semibold pb-1 border-b-2 ${
-            activeHash === "#projects"
-              ? "border-transparent [border-image:linear-gradient(to_right,#1d4ed8,#3b82f6)_1]"
-              : "border-none"
-          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
-        >
-          Projects
-        </a>
-      </li>
-      <li>
-        <a
-          href="#education"
-          className={`font-semibold pb-1 border-b-2 ${
-            activeHash === "#education"
-              ? "border-transparent [border-image:linear-gradient(to_right,#1d4ed8,#3b82f6)_1]"
-              : "border-none"
-          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
-        >
-          Education
-        </a>
-      </li>
-      <li>
-        <a
-          href="#contact"
-          className={`font-semibold pb-1 ${
-            activeHash === "#contact" ? "border-b-2 border-blue-500 " : ""
-          } hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-700 hover:via-blue-600 hover:to-blue-300 transition-colors duration-300`}
-        >
-          Contact
-        </a>
-      </li>
+      {NavItems.map((item) => (
+        <NavLinks
+          key={item.href}
+          href={item.href}
+          label={item.label}
+          activeHash={activeHash}
+        />
+      ))}
     </>
   );
 
