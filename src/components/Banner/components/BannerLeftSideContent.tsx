@@ -39,14 +39,13 @@ export function BannerLeftSideContent() {
       <div>
         <AnimateOnView direction="left" delay={0.1} duration={0.6}>
           <p className="text-gray-300 mb-6 max-w-xl">
-            I’m a university student who builds responsive and user-friendly
-            websites using modern web technologies.
+            I’m a university student who builds responsive and user-friendly websites using modern web technologies.
           </p>
         </AnimateOnView>
         <AnimateOnView direction="left" delay={0.1} duration={1.2}>
           <p className="text-gray-300 mb-6 max-w-xl">
-            My goal is to become a software engineer, exploring Next.js,
-            building scalable and modern applications.
+            My goal is to become a software engineer, exploring Prisma,
+            building modern applications.
           </p>
         </AnimateOnView>
       </div>
