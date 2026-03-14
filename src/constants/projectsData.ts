@@ -87,14 +87,4 @@ export const projectData: ProjectData[] = [
     gitHub_server: "https://github.com/tahmid-khan-hub/Recipe-Book-Server",
     gitHub_client: "https://github.com/tahmid-khan-hub/Recipe-Book",
   },
-  {
-    id: 5,
-    title: "EventExplorar",
-    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540464/Screenshot_2026-01-28_010040_dbq9ry.png",
-    description:
-      "EventExplorar helps you discover and enjoy events around you with ease and excitement. Stay updated on upcoming programs, workshops, and festivals tailored to your interests.",
-    url: "http://sprightly-torte-9a8d5c.netlify.app",
-    technologies: ["React.js", "Tailwind", "JavaScript", "CSS", "Firebase"],
-    gitHub_client: "https://github.com/tahmid-khan-hub/Event-Explorar",
-  },
 ];

@@ -19,6 +19,6 @@ export const bulletPoints: BulletPoints[] = [
     },
     {
         id: 4,
-        text: "Exploring new technologies like Next.js, TypeScript, PostgreSQL and modern API patterns"
+        text: "Exploring new technologies like Next.js, TypeScript, PostgreSQL, Prisma and modern API patterns"
     },
 ]

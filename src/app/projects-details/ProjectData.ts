@@ -115,26 +115,6 @@ export const ProjectData: Project[] = [
       "Add real-time messaging between instructors and students, and implement progress-based certificates.",
   },
   {
-    id: 5,
-    title: "EventExplorar",
-    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540464/Screenshot_2026-01-28_010040_dbq9ry.png",
-    description:
-      "EventExplorar is your ultimate event discovery platform. Whether it's workshops, festivals, or tech meetups, users can stay informed and engaged with the latest events. Users can book seats for events and manage their enrolled sessions. It is built with a focus on interactivity, smooth animations, and mobile-first design.",
-    features: [
-      "Find events across various categories",
-      "View full event descriptions, schedules and locations",
-      "Keep track of your booked events",
-      "Firebase-based secure login system",
-    ],
-    technologies: ["React.js", "Tailwind", "JavaScript", "CSS", "Firebase"],
-    challenges:
-      "Implementing Firebase authentication and integrating it with route protection and user state management was challenging, especially for first-time setup.",
-    whatILearned:
-      "I learned how to set up Firebase Auth in React, manage user login/logout state, and secure access to protected components.",
-    futurePlans:
-      "In the future, I plan to add a role-based dashboard where users and organizers can manage events, view bookings, and post their own events.",
-  },
-  {
     id: 4,
     title: "RecipeBook",
     image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540365/Screenshot_2026-01-28_005901_qqefxu.png",
