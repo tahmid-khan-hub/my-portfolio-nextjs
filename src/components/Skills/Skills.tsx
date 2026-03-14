@@ -1,6 +1,6 @@
 "use client";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGithub, FaDatabase, FaGitAlt } from "react-icons/fa";
-import { SiTailwindcss, SiJavascript, SiTypescript, SiMongodb, SiExpress, SiNextdotjs, SiVercel } from "react-icons/si";
+import { SiTailwindcss, SiJavascript, SiTypescript, SiMongodb, SiExpress, SiNextdotjs, SiVercel, SiShadcnui } from "react-icons/si";
 import { motion } from "framer-motion";
 import { IoLogoFirebase } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -13,24 +13,25 @@ const skills = [
   { id: 4, title: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
   { id: 5, title: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
   { id: 6, title: "React", icon: <FaReact className="text-sky-400" /> },
-  { id: 7, title: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+  { id: 7, title: "Next.js", icon: <SiNextdotjs className="text-white" /> },
   { id: 8, title: "Express.js", icon: <SiExpress className="text-gray-200" /> },
   { id: 9, title: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
-  { id: 10, title: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-  { id: 11, title: "Vercel", icon: <SiVercel className="text-white" /> },
-  { id:12, title: "Firebase", icon: <IoLogoFirebase className="text-orange-400" />},
-  { id:13, title: "SQL", icon: <FaDatabase className="text-white" />},
-  { id:14, title: "PostgreSQL", icon: <BiLogoPostgresql className="text-blue-500" />},
-  { id:15, title: "Git", icon: <FaGitAlt className="text-orange-400" />},
-  { id:16, title: "GitHub", icon: <FaGithub className="text-white" />},
+  { id:10, title: "SQL", icon: <FaDatabase className="text-white" />},
+  { id:11, title: "PostgreSQL", icon: <BiLogoPostgresql className="text-blue-500" />},
+  { id: 12, title: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+  { id:13, title: "Git", icon: <FaGitAlt className="text-orange-400" />},
+  { id:14, title: "GitHub", icon: <FaGithub className="text-white" />},
+  { id: 15, title: "Vercel", icon: <SiVercel className="text-white" /> },
+  { id:16, title: "Firebase", icon: <IoLogoFirebase className="text-orange-400" />},
+  {id: 17, title: "Shadcn", icon: <SiShadcnui className="text-white" />},
 ];
 
 const Skills = () => {
   return (
     <section className="w-full bg-[#0c1220] flex justify-center py-12 mt-16 mb-24 px-4 md:px-3 lg:px-4 ">
-      <div className="max-w-[1330px] w-full py-[54px]">
+      <div className="max-w-332.5 w-full py-13.5">
         <AnimateOnView direction="down" delay={0.25} duration={0.6}><h2 className="text-4xl font-bold text-center mb-10 text-white">
-          Skills & <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Tools</span>
+          Skills & <span className="bg-linear-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Tools</span>
         </h2></AnimateOnView>
 
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-8 text-center">

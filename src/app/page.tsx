@@ -3,7 +3,7 @@ import Banner from "@/components/Banner/Banner";
 import Contact from "@/components/Contact/Contact";
 import Education from "@/components/Education";
 import Projects from "@/components/Projects/Projects";
-import Skills from "@/components/Skills";
+import Skills from "@/components/Skills/Skills";
 
 export default function Home() {
   return (
