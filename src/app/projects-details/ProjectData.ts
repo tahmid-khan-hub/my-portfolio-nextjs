@@ -114,34 +114,5 @@ export const ProjectData: Project[] = [
     futurePlans:
       "Add real-time messaging between instructors and students, and implement progress-based certificates.",
   },
-  {
-    id: 4,
-    title: "RecipeBook",
-    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540365/Screenshot_2026-01-28_005901_qqefxu.png",
-    description:
-      "RecipeBook is a community-driven cooking web app that empowers users to create, explore, and manage recipes with ease. Featuring an elegant interface and personalized dashboards, users can browse others’ recipes, like their favorites, and manage their own culinary creations. Designed with performance, accessibility, and interactivity in mind.",
-    features: [
-      "Create, edit, and organize personal recipes",
-      "Explore shared recipes from other users",
-      "Like your favorite dishes",
-      "Dashboard interface to view and manage your recipes",
-      "Filter recipes based on cuisine and popularity",
-    ],
-    technologies: [
-      "React.js",
-      "Tailwind",
-      "CSS",
-      "JavaScript",
-      "MongoDB",
-      "Firebase",
-      "Node.js",
-      "Express.js",
-    ],
-    challenges:
-      "The main challenge was building the backend and dashboard from scratch for the first time, especially setting up routes, database operations, and state handling.",
-    whatILearned:
-      "I learned how to structure a full-stack project with a backend using Node.js and Express, and how to build a functional dashboard in React connected to the database.",
-    futurePlans:
-      "Introduce comment sections, ratings, and export-to-PDF functionality for recipes.",
-  },
+  
 ];

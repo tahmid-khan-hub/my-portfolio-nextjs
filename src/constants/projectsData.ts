@@ -67,24 +67,4 @@ export const projectData: ProjectData[] = [
     gitHub_server: "https://github.com/tahmid-khan-hub/NexUsCore-server",
     gitHub_client: "https://github.com/tahmid-khan-hub/Nexus-Core",
   },
-  {
-    id: 4,
-    title: "RecipeBook",
-    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540365/Screenshot_2026-01-28_005901_qqefxu.png",
-    description:
-      "RecipeBook brings delicious recipes to your fingertips, making cooking easy and fun for everyone. Explore a wide range of recipes with step-by-step instructions and beautiful visuals.",
-    url: "https://comforting-pasca-4e92c6.netlify.app/",
-    technologies: [
-      "React.js",
-      "Tailwind",
-      "CSS",
-      "JavaScript",
-      "MongoDB",
-      "Firebase",
-      "Node.js",
-      "Express.js",
-    ],
-    gitHub_server: "https://github.com/tahmid-khan-hub/Recipe-Book-Server",
-    gitHub_client: "https://github.com/tahmid-khan-hub/Recipe-Book",
-  },
 ];
