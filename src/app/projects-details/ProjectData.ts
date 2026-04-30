@@ -14,6 +14,42 @@ export type Project = {
 export const ProjectData: Project[] = [
   {
     id: 1,
+    title: "Betrak",
+    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1777534806/Screenshot_2026-04-30_133924_pn9zx6.png",
+    description:
+      "Betrak takes a short assessment covering daily usage habits, sleep patterns and mental health, then runs the data through a machine learning backend to classify your addiction level with a confidence score. The results page breaks down your profile with interactive charts and gives personalized recommendations based on the prediction. Built with Next.js on the frontend and FastAPI + scikit-learn on the backend, with Google OAuth.",
+    features: [
+      "Addiction level classification: Low, Medium or High with confidence score",
+      "Multi-step assessment covering usage, sleep and mental health",
+      "Interactive results with daily usage chart, intensity gauge and sleep correlation chart",
+      "Personalized suggestions based on prediction output",
+      "Assessment history stored per user in PostgreSQL",
+    ],
+    technologies: [
+      "Next js",
+      "Tailwind CSS",
+      "TypeScript",
+      "PostgreSQL",
+      "NextAuth",
+      "Tan Stack Query",
+      "Shadcn UI", 
+      "Python", 
+      "FastAPI", 
+      "SQLAlchemy", 
+      "scikit-learn", 
+      "SMOTE", 
+      "pandas", 
+      "joblib"
+    ],
+    challenges:
+      "First time using Python as a backend and training an actual ML model, bridging a FastAPI service with a Next.js frontend while handling data preprocessing, SMOTE balancing and model serialization was all new territory.",
+    whatILearned:
+      "How to connect a Next.js frontend with a Python/FastAPI backend across different runtimes and how a trained classifier actually turns input features into a real prediction with confidence.",
+    futurePlans:
+      "Allow users to retake the assessment over time and track how their habits shift, add a personalized progress tracker showing improvement or decline across sessions and introduce a comparison view showing how a user's lifestyle stacks up against the healthiest profiles in the dataset.",
+  },
+  {
+    id: 2,
     title: "KitStruck",
     image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769265964/Screenshot_2026-01-24_144003_lmwdfl.png",
     description:
@@ -48,7 +84,7 @@ export const ProjectData: Project[] = [
       "Future plan for this project is to add order tracking  (Processing → Shipped → Delivered), Pin delivery location during checkout using maps and Live chat system for instant customer support.",
   },
   {
-    id: 2,
+    id: 3,
     title: "ThreadQube",
     image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540010/Screenshot_2026-01-28_005220_jwd5vn.png",
     description:
@@ -84,7 +120,7 @@ export const ProjectData: Project[] = [
       "Track revenue from membership subscriptions in the admin dashboard. Premium users gain extended privileges such as editing posts. Real-time notifications for comments and likes",
   },
   {
-    id: 3,
+    id: 4,
     title: "NexUScore",
     image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540209/Screenshot_2026-01-28_005625_fxzogq.png",
     description:
