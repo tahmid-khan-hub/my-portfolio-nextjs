@@ -39,7 +39,7 @@ const About = () => {
 
           {/* 3 */}
           <AnimateOnView direction="left" delay={0.25} duration={0.6}><p className="text-gray-300 leading-relaxed ">
-           I enjoy <span className="font-bold">solving problems</span> through code and continuously expanding my knowledge in both frontend and backend technologies.
+           I do <span className="font-bold">competitive programming</span> on Codeforces and CodeChef and continuously expand my knowledge in both frontend and backend technologies.
            With every project I learn something new, explore better ways to write <span className="font-bold">clean code</span> and <span className="font-bold">design interfaces</span> that are easy to use. I also use <span className="font-bold">AI tools</span> deliberately to make my workflow more productive, not as a shortcut but as a way to move faster and think better.
           </p></AnimateOnView>
 
