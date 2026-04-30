@@ -42,10 +42,15 @@ export function BannerLeftSideContent() {
             I’m a university student who builds responsive and user-friendly websites using modern web technologies.
           </p>
         </AnimateOnView>
+        <AnimateOnView direction="left" delay={0.1} duration={0.6}>
+          <p className="text-gray-300 mb-6 max-w-xl">
+            I also compete in competitive programming on Codeforces (Pupil, 1200+) and CodeChef (2 stars).
+            Recently I explored machine learning by training a Random Forest classifier on a real dataset and integrating it into a full-stack web application.
+          </p>
+        </AnimateOnView>
         <AnimateOnView direction="left" delay={0.1} duration={1.2}>
           <p className="text-gray-300 mb-6 max-w-xl">
-            My goal is to become a software engineer, exploring Prisma,
-            building modern applications.
+            My goal is to become a software engineer, exploring Prisma, Socket.io and building web applications.
           </p>
         </AnimateOnView>
       </div>
