@@ -13,6 +13,16 @@ export interface ProjectData {
 export const projectData: ProjectData[] = [
   {
     id: 1,
+    title: "Betrak",
+    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1777534806/Screenshot_2026-04-30_133924_pn9zx6.png",
+    description:
+      "A full-stack web app that predicts your social media addiction level - Low, Medium or High - using a trained Random Forest model, returning a confidence score and personalized recommendations based on your usage habits, sleep and mental health.",
+    url: "https://betrak-web.vercel.app",
+    technologies: ["Next js", "TypeScript", "PostgreSQL", "Tailwind CSS", "NextAuth", "Tan Stack Query", "Shadcn UI", "Python", "FastAPI", "SQLAlchemy", "scikit-learn", "SMOTE", "pandas", "joblib"],
+    gitHub_client: "https://github.com/tahmid-khan-hub/Betrak",
+  },
+  {
+    id: 2,
     title: "KitStruck",
     image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769265964/Screenshot_2026-01-24_144003_lmwdfl.png",
     description:
@@ -22,7 +32,7 @@ export const projectData: ProjectData[] = [
     gitHub_client: "https://github.com/tahmid-khan-hub/KitStruck",
   },
   {
-    id: 2,
+    id: 3,
     title: "ThreadQube",
     image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540010/Screenshot_2026-01-28_005220_jwd5vn.png",
     description:
@@ -46,7 +56,7 @@ export const projectData: ProjectData[] = [
     gitHub_server: "https://github.com/tahmid-khan-hub/Thread-Qube-Server",
   },
   {
-    id: 3,
+    id: 4,
     title: "NexUScore",
     image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540209/Screenshot_2026-01-28_005625_fxzogq.png",
     description:
