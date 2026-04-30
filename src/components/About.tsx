@@ -26,21 +26,21 @@ const About = () => {
 
           {/* 1 */}
           <AnimateOnView direction="left" delay={0.25} duration={0.6}><p className="text-gray-300 leading-relaxed ">
-            I&apos;m a passionate <span className="font-bold mr-1">Web developer</span> 
-             who loves building efficient, maintainable and modern web applications.
+             I&apos;m a <span className="font-bold">Web developer</span> who builds things on the web and keeps figuring out how everything connects.
           </p></AnimateOnView>
 
           {/* 2 */}
           <AnimateOnView direction="right" delay={0.25} duration={0.6}><p className="text-gray-300 leading-relaxed ">
             Currently, I&apos;m pursuing a degree in{" "}
-            <span className="font-bold mr-1">Computer Science & Engineering</span> 
-            at <span className="font-bold mr-1">Metropolitan University</span>, 
+            <span className="font-bold">Computer Science & Engineering</span> 
+            at <span className="font-bold">Metropolitan University</span>, 
             located in Sylhet, Bangladesh.
           </p></AnimateOnView>
 
           {/* 3 */}
           <AnimateOnView direction="left" delay={0.25} duration={0.6}><p className="text-gray-300 leading-relaxed ">
-           I enjoy <span className="font-bold mr-1">solving problems</span> through code and continuously expanding my knowledge in both frontend and backend technologies. With every project, I aim to write clean, maintainable code and design <span className="font-bold mr-1">user-friendly</span> interfaces that make a lasting impact.
+           I enjoy <span className="font-bold">solving problems</span> through code and continuously expanding my knowledge in both frontend and backend technologies.
+           With every project I learn something new, explore better ways to write <span className="font-bold">clean code</span> and <span className="font-bold">design interfaces</span> that are easy to use. I also use <span className="font-bold">AI tools</span> deliberately to make my workflow more productive, not as a shortcut but as a way to move faster and think better.
           </p></AnimateOnView>
 
           {/* journey glimpse */}
@@ -59,7 +59,7 @@ const About = () => {
 
           <AnimateOnView direction="scale" delay={0.25} duration={0.6}>
             <p className="italic text-lg bg-linear-to-r from-blue-700 via-blue-400 to-blue-200 bg-clip-text text-transparent mt-7">
-              &quot;Turning ideas into scalable solutions — one line of code at a time.&quot;
+              &quot;Now stopping does not feel like an option&quot;
             </p>
           </AnimateOnView>
         </div>

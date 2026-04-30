@@ -11,7 +11,7 @@ export const bulletPoints: BulletPoints[] = [
     },
     {
         id: 2,
-        text: "Focused on web performance optimization and responsive design"
+        text: "Focused on writing clean code and learning how systems work end to end"
     },
     {
         id: 3,
@@ -19,6 +19,6 @@ export const bulletPoints: BulletPoints[] = [
     },
     {
         id: 4,
-        text: "Exploring new technologies like Next.js, TypeScript, PostgreSQL, Prisma and modern API patterns"
+        text: "Exploring new technologies like Prisma, Socket.io and Python"
     },
 ]
