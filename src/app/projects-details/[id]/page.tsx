@@ -16,10 +16,8 @@ export default async function ProjectDetails({ params, }: { params: Promise<{ id
     const project = ProjectData.find((p) => p.id === Number(id));
     if(!project) return <Loading></Loading>;
 
-    return <div className="bg-[#0c1220] pb-10">
+    return <div className="bg-[#0c1220] py-10 min-h-screen">
         <AnimateOnView direction="up" delay={0.25} duration={0.6}><div className="max-w-[1350px] mx-auto px-4 md:px-3 ">
-            {/* back button */}
-            <AnimateOnView direction="scale" delay={0.25} duration={0.6}><Link href={'/'}><button className="border p-2 px-4 mt-11 text-blue-500 hover:text-white hover:border-blue-700 hover:bg-blue-500  text-xl transition rounded-xl"><FaArrowLeftLong size={25} /></button></Link></AnimateOnView>
 
             {/* content */}
             <div className="mt-9 pb-5 pt-4 bg-[#162036] rounded-xl">
