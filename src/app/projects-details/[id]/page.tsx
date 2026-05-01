@@ -2,7 +2,6 @@ import Loading from "@/app/loading";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowLeftLong } from "react-icons/fa6";
 import { ProjectData } from "../ProjectData";
 import AnimateOnView from "@/hooks/AnimateOnView";
 import { FaLongArrowAltLeft } from "react-icons/fa";
@@ -18,7 +17,7 @@ export default async function ProjectDetails({ params, }: { params: Promise<{ id
     if(!project) return <Loading></Loading>;
 
     return <div className="bg-[#0c1220] py-10 min-h-screen">
-        <AnimateOnView direction="up" delay={0.25} duration={0.6}><div className="max-w-[1350px] mx-auto px-4 md:px-3 ">
+        <AnimateOnView direction="up" delay={0.25} duration={0.6}><div className="max-w-337.5 mx-auto px-4 md:px-3 ">
             {/* content */}
             <div className="mt-9 pb-5 pt-4 rounded-xl">
                 {/* title */}
@@ -33,10 +32,11 @@ export default async function ProjectDetails({ params, }: { params: Promise<{ id
                     className="w-full h-auto px-2"
                     />
                 </div>
+                {/* project - title */}
+                <h1 className="text-left text-4xl text-gray-300 font-bold my-10">{project.title}</h1>
                 {/* description */}
                 <div className="">
-                    <h5 className="text-xl text-gray-300 font-semibold mt-7 mb-2">Description</h5>
-                    <p className="text-gray-400">{project.description}</p>
+                    <p className="text-gray-300 bg-gray-800 border border-gray-500 rounded-lg p-3">{project.description}</p>
                 </div>
                 {/* features */}
                 <div className="pl-4.5">
