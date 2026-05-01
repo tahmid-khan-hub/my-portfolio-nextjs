@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ProjectData } from "../ProjectData";
 import AnimateOnView from "@/hooks/AnimateOnView";
 import { FaLongArrowAltLeft } from "react-icons/fa";
+import { MdOutlineTipsAndUpdates } from "react-icons/md";
 
 export const metadata: Metadata = {
   title: "Portfolio | Project-Details",
@@ -33,17 +34,23 @@ export default async function ProjectDetails({ params, }: { params: Promise<{ id
                     />
                 </div>
                 {/* project - title */}
-                <h1 className="text-left text-4xl text-gray-300 font-bold my-10">{project.title}</h1>
+                <h1 className="text-left text-4xl text-gray-300 font-bold mt-10 mb-4">{project.title}</h1>
                 {/* description */}
                 <div className="">
-                    <p className="text-gray-300 bg-gray-800 border border-gray-500 rounded-lg p-3">{project.description}</p>
+                    <p className="text-gray-300 bg-gray-900 border border-gray-700 hover:bg-gray-800 rounded-lg p-3">{project.description}</p>
                 </div>
                 {/* features */}
-                <div className="pl-4.5">
-                    <h5 className="text-xl text-gray-300 font-semibold mt-7 mb-2 -ml-4">Features</h5>
-                    {project.features.map((f: string, i: number) => {
-                        return <li key={i} className="text-gray-400">{f}</li>
+                <div className="">
+                    <h5 className="text-4xl text-gray-300 font-bold mt-10 mb-4">Features</h5>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                        {project.features.map((feature: string, i: number) => {
+                        return <div key={i} className="h-full text-gray-300 bg-gray-900 border border-gray-700 hover:bg-gray-800 rounded-lg p-3 pb-7 pl-4">
+                            <MdOutlineTipsAndUpdates
+                            className="text-blue-500 mt-0.5 mb-2.5 shrink-0" size={25} />
+                            <span>{feature}</span>
+                        </div>
                     })}
+                    </div>
                 </div>
                 {/* tech stack */}
                 <div className="">
