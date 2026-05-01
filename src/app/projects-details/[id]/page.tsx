@@ -62,14 +62,22 @@ export default async function ProjectDetails({ params, }: { params: Promise<{ id
                     })}
                 </div>
                 {/* challenges */}
-                <div className="">
-                    <h5 className="text-xl text-gray-300 font-semibold mt-7 mb-2">Challenegs I faced</h5>
-                    <p className="text-gray-400">{project.challenges}</p>
+                <div className="mt-7">
+                    <h5 className="text-4xl text-gray-300 font-bold mt-10 mb-4">Challenges Faced</h5>
+                    <div className="bg-gray-900 border border-gray-700 rounded-xl p-5">
+                        <div className="border-l-2 border-blue-500 pl-4">
+                        <p className="text-gray-400 leading-relaxed">{project.challenges}</p>
+                        </div>
+                    </div>
                 </div>
                 {/* learned */}
                 <div className="">
-                    <h5 className="text-xl text-gray-300 font-semibold mt-7 mb-2">What I learned</h5>
-                    <p className="text-gray-400">{project.whatILearned}</p>
+                    <h5 className="text-4xl text-gray-300 font-bold mt-10 mb-4">What I learned</h5>
+                    <div className="bg-gray-900 border border-gray-700 rounded-xl p-5">
+                        <div className="border-l-2 border-blue-500 pl-4">
+                        <p className="text-gray-400 leading-relaxed">{project.whatILearned}</p>
+                        </div>
+                    </div>
                 </div>
                 {/* future plan */}
                 <div className="pb-7 ">
