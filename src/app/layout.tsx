@@ -11,6 +11,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Portfolio",
+  description: "Personal portfolio showcasing my projects and skills in full-stack web development.",
   icons: {
     icon: "/My Portfolio logo.png",
   },
@@ -28,16 +29,6 @@ export default function RootLayout({
           {/* Blue Spotlight Background */}
           <div
             className="absolute inset-0 z-0 pointer-events-none"
-            style={{
-              background: `
-              radial-gradient(
-                circle at center,
-                rgba(59, 130, 246, 0.12) 0%,
-                rgba(59, 130, 246, 0.06) 20%,
-                rgba(0, 0, 0, 0.0) 60%
-              )
-            `,
-            }}
           />
           {/* Content */}
           <Navbar></Navbar>
