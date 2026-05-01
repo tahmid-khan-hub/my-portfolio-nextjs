@@ -54,9 +54,9 @@ export default async function ProjectDetails({ params, }: { params: Promise<{ id
                 </div>
                 {/* tech stack */}
                 <div className="">
-                    <h5 className="text-xl text-gray-300 font-semibold mt-7 mb-2">Tech Stack</h5>
+                    <h5 className="text-4xl text-gray-300 font-bold mt-10 mb-4">Tech Stack</h5>
                     {project.technologies.map((tech: string, i: number) => {
-                        return <button key={i} className="px-3 py-1 mr-2 my-2 md:my-1 lg:my-0 text-xs bg-blue-600/20 text-blue-400 rounded-full hover:bg-blue-600/80 hover:text-blue-200">
+                        return <button key={i} className="px-5 py-2 mr-2 my-2 bg-gray-900 border border-gray-800 text-blue-500 rounded-full hover:bg-blue-600/80 hover:text-blue-200">
                         {tech}
                         </button>
                     })}
