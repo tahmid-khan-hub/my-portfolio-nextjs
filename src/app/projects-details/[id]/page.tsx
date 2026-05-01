@@ -6,6 +6,7 @@ import { ProjectData } from "../ProjectData";
 import AnimateOnView from "@/hooks/AnimateOnView";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
+import { HiOutlineChevronDoubleRight } from "react-icons/hi";
 
 export const metadata: Metadata = {
   title: "Portfolio | Project-Details",
@@ -24,13 +25,13 @@ export default async function ProjectDetails({ params, }: { params: Promise<{ id
                 {/* title */}
                 <Link href={"/"}><h1 className="flex text-left text-3xl text-gray-300 font-bold mb-10"><FaLongArrowAltLeft className="mr-3 mt-0.5" size={35} />Project Details</h1></Link>
                 {/* image */}
-                <div className="border border-gray-500">
+                <div className="border border-gray-700 rounded-lg">
                 <Image
                     src={project.image}
                     alt="project image"
                     width={1500}
                     height={1200}
-                    className="w-full h-auto px-2"
+                    className="w-full px-2"
                     />
                 </div>
                 {/* project - title */}
@@ -80,11 +81,14 @@ export default async function ProjectDetails({ params, }: { params: Promise<{ id
                     </div>
                 </div>
                 {/* future plan */}
-                <div className="pb-7 ">
-                    <h5 className="text-xl text-gray-300 font-semibold mt-7 mb-2">Future Plans</h5>
+                <div className="pb-7">
+                    <h5 className="text-4xl text-gray-300 font-bold mt-10 mb-4">Future Plans</h5>
                     {project.futurePlans.map((plans: string, i: number) => {
-                        return <div key={i}>
-                            
+                        return <div key={i} className="ml-3">
+                            <p className="flex">
+                                <HiOutlineChevronDoubleRight size={20} className="mb-5 mr-2 mt-0.5 text-blue-500" />
+                                <span className="text-gray-300">{plans}</span>
+                            </p>
                         </div>
                     })}
                 </div>
