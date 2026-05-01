@@ -82,7 +82,11 @@ export default async function ProjectDetails({ params, }: { params: Promise<{ id
                 {/* future plan */}
                 <div className="pb-7 ">
                     <h5 className="text-xl text-gray-300 font-semibold mt-7 mb-2">Future Plans</h5>
-                    <p className="text-gray-400">{project.futurePlans}</p>
+                    {project.futurePlans.map((plans: string, i: number) => {
+                        return <div key={i}>
+                            
+                        </div>
+                    })}
                 </div>
             </div>
         </div></AnimateOnView>

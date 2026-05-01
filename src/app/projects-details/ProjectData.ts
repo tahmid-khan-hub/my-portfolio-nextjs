@@ -8,7 +8,7 @@ export type Project = {
   technologies: string[];
   challenges: string;
   whatILearned: string;
-  futurePlans: string;
+  futurePlans: string[];
 };
 
 export const ProjectData: Project[] = [
@@ -45,8 +45,10 @@ export const ProjectData: Project[] = [
       "First time using Python as a backend and training an actual ML model, bridging a FastAPI service with a Next.js frontend while handling data preprocessing, SMOTE balancing and model serialization was all new territory.",
     whatILearned:
       "How to connect a Next.js frontend with a Python/FastAPI backend across different runtimes and how a trained classifier actually turns input features into a real prediction with confidence.",
-    futurePlans:
-      "Allow users to retake the assessment over time and track how their habits shift, add a personalized progress tracker showing improvement or decline across sessions and introduce a comparison view showing how a user's lifestyle stacks up against the healthiest profiles in the dataset.",
+    futurePlans: [
+      "Allow users to retake the assessment over time and track how their habits shift",
+      "Add a personalized progress tracker showing improvement or decline across sessions",
+      "Introduce a comparison view showing how a user's lifestyle stacks up against the healthiest profiles in the dataset.",]
   },
   {
     id: 2,
@@ -80,8 +82,11 @@ export const ProjectData: Project[] = [
       "Designing a complete e-commerce flow, from product listing to checkout and order management. Integrating PostgreSQL with Next.js for the first time and handling database operations reliably.",
     whatILearned:
       "I learned how e-commerce web applications work, including payments and orders. Hands-on experience connecting Next.js with PostgreSQL to build a full-stack, database-driven application.",
-    futurePlans:
-      "Future plan for this project is to add order tracking  (Processing → Shipped → Delivered), Pin delivery location during checkout using maps and Live chat system for instant customer support.",
+    futurePlans: [
+      "Add order tracking system (Processing → Shipped → Delivered)",
+      "Pin delivery location during checkout using maps",
+      "Live chat system for instant customer support.",
+    ]
   },
   {
     id: 3,
@@ -116,8 +121,10 @@ export const ProjectData: Project[] = [
       "Handling complex MongoDB Aggregation Pipelines for advanced queries was challenging, especially in filtering and managing large datasets.",
     whatILearned:
       "Improved skills in MongoDB aggregation for data analysis. Learned to integrate Stripe payment securely for subscriptions. Enhanced understanding of scalable admin dashboards & user moderation systems.",
-    futurePlans:
-      "Track revenue from membership subscriptions in the admin dashboard. Premium users gain extended privileges such as editing posts. Real-time notifications for comments and likes",
+    futurePlans: [
+      "Track revenue from membership subscriptions in the admin dashboard",
+      "Premium users gain extended privileges such as editing posts",
+      "Real-time notifications for comments and likes",]
   },
   {
     id: 4,
@@ -147,8 +154,9 @@ export const ProjectData: Project[] = [
       "Applying JWT-based authentication and protecting routes securely was a major challenge, especially while handling token expiration and user role verification.",
     whatILearned:
       "Gained deep understanding of JWT authentication flow, and efficient database querying in MongoDB.",
-    futurePlans:
-      "Add real-time messaging between instructors and students, and implement progress-based certificates.",
+    futurePlans: [
+      "Add real-time messaging between instructors and students", 
+      "Implement progress-based certificates.",
+    ]
   },
-  
 ];
