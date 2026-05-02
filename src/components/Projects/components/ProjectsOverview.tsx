@@ -61,8 +61,9 @@ const ProjectsOverview = ({id, title, description, technologies, project_url, gi
 
         {/* project details page link */}
         <Link href={`/projects-details/${id}`}>
-          <button className="text-blue-500 hover:text-blue-400 text-xl transition-transform duration-200 hover:scale-120 ">
-            <FaArrowRightLong size={25} className="-mb-1.5" />
+          <button className="flex text-blue-500 hover:text-blue-400 text-lg">
+            <span className="font-semibold">Details</span>
+            <FaArrowRightLong size={21} className="ml-2 mt-1" />
           </button>
         </Link>
       </div>
