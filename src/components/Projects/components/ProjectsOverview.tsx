@@ -20,7 +20,7 @@ const ProjectsOverview = ({id, title, description, technologies, project_url, gi
         {technologies.map((tech, i) => (
           <button
             key={i}
-            className="px-3 py-1 text-xs bg-blue-600/20 text-blue-400 rounded-full hover:bg-blue-600/80 hover:text-blue-200 transition-transform duration-200 hover:scale-108"
+            className="px-3 py-1 text-xs bg-gray-900 border border-gray-800 text-blue-500 rounded-full hover:bg-blue-600/80 hover:text-blue-200"
           >
             {tech}
           </button>
