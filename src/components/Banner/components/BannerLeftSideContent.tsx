@@ -44,7 +44,7 @@ export function BannerLeftSideContent() {
         </AnimateOnView>
         <AnimateOnView direction="left" delay={0.1} duration={0.6}>
           <p className="text-gray-300 mb-6 max-w-xl">
-            I also compete in competitive programming on Codeforces (Pupil, 1200+) and CodeChef (2 stars).
+            I also compete in competitive programming on Codeforces (Pupil, 1200+) and CodeChef (3 stars).
             Recently I explored machine learning by training a Random Forest classifier on a real dataset and integrating it into a full-stack web application.
           </p>
         </AnimateOnView>
