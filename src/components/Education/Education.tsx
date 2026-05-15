@@ -1,34 +1,46 @@
 "use client";
 import AnimateOnView from "@/hooks/AnimateOnView";
 import CertificateCard from "../CertificateCard";
+import { HiAcademicCap } from "react-icons/hi2";
 
 const Education = () => {
   return (
     <div>
       <div className="max-w-337.5 mx-auto px-4 md:px-3 py-16 mb-24">
-        <AnimateOnView direction="down" delay={0.25} duration={0.6}><h1 className="text-center text-4xl text-gray-300 font-bold mb-12">
-          Education & <span className="bg-linear-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Certification</span>
-        </h1></AnimateOnView>
+        <AnimateOnView direction="down" delay={0.25} duration={0.6}>
+          <h1 className="text-center text-4xl text-gray-300 font-bold mb-12">
+            Education &{" "}
+            <span className="bg-linear-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">
+              Certification
+            </span>
+          </h1>
+        </AnimateOnView>
 
-        {/* Responsive layout: column on small, row on md+ */}
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           {/* Education */}
-          <div className=" bg-gray-800 rounded-xl">
-            <div className="p-5 shadow-md">
-              <h3 className="text-lg text-gray-300 font-semibold">BSc in CSE</h3>
+          <div className="bg-gray-800 rounded-xl flex flex-col">
+            <div className="p-5 shadow-md flex flex-col flex-1">
+              {/* Icon */}
+              <div className="mb-3">
+                <HiAcademicCap className="text-blue-400 text-4xl hover:text-blue-500" />
+              </div>
+              <h3 className="text-xl text-gray-300 font-semibold">BSc in CSE</h3>
               <p className="text-sm text-gray-500">
                 Metropolitan University, Sylhet, Bangladesh
               </p>
-              <p className="mt-3 mb-7 text-gray-300">
-                I’m currently pursuing my Bachelor’s degree with a focus on web
-                development and problem-solving. At my university, I work on course-related projects, participate in coding contests and collaborate with peers, while also building web development projects to strengthen my skills.
+              <p className="mt-3 text-gray-300 flex-1">
+                I&apos;m currently pursuing my Bachelor&apos;s degree with a focus on web
+                development and problem-solving. At my university, I work on
+                course-related projects, participate in coding contests and
+                collaborate with peers, while also building web development
+                projects to strengthen my skills.
               </p>
-              <p className="text-sm text-gray-500 mt-1 font-semibold">2023 - 2027</p>
+              <p className="text-sm text-gray-500 mt-6 font-semibold">2023 - 2027</p>
             </div>
           </div>
 
           {/* Certificate */}
-          <div className=" bg-gray-800 rounded-xl h-full">
+          <div className="bg-gray-800 rounded-xl flex flex-col">
             <CertificateCard
               title="Complete Web Development Course"
               platform="Programming Hero"
