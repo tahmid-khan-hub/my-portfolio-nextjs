@@ -1,22 +1,19 @@
 "use client";
-import React from "react";
-import CertificateCard from "./CertificateCard";
 import AnimateOnView from "@/hooks/AnimateOnView";
+import CertificateCard from "../CertificateCard";
 
 const Education = () => {
   return (
     <div>
-      <div className="max-w-[1350px] mx-auto px-4 md:px-3 py-16 mb-24">
+      <div className="max-w-337.5 mx-auto px-4 md:px-3 py-16 mb-24">
         <AnimateOnView direction="down" delay={0.25} duration={0.6}><h1 className="text-center text-4xl text-gray-300 font-bold mb-12">
-          Education & <span className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Certification</span>
+          Education & <span className="bg-linear-to-r from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Certification</span>
         </h1></AnimateOnView>
 
         {/* Responsive layout: column on small, row on md+ */}
-        <div className="flex flex-col md:flex-row md:items-start gap-8">
+        <div className="grid grid-cols-2 gap-8">
           {/* Education */}
-          <div className="flex-1 relative bg-gray-800 rounded-xl">
-            {/* dot */}
-            <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2 "></div>
+          <div className=" bg-gray-800 rounded-xl">
             <div className="p-5 shadow-md">
               <h3 className="text-lg text-gray-300 font-semibold">BSc in CSE</h3>
               <p className="text-sm text-gray-500">
@@ -30,13 +27,8 @@ const Education = () => {
             </div>
           </div>
 
-          {/* Divider (only visible on md+) */}
-          <div className="divider divider-horizontal "></div>
-
           {/* Certificate */}
-          <div className="flex-1 relative bg-gray-800 rounded-xl mt-0 md:mt-[320px]">
-            {/* dot */}
-             <div className="absolute w-3 h-3 bg-blue-500 rounded-full -left-[7px] top-2 "></div>
+          <div className=" bg-gray-800 rounded-xl h-full">
             <CertificateCard
               title="Complete Web Development Course"
               platform="Programming Hero"
