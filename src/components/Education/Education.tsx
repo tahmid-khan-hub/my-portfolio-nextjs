@@ -1,7 +1,7 @@
 "use client";
 import AnimateOnView from "@/hooks/AnimateOnView";
-import CertificateCard from "../CertificateCard";
 import { HiAcademicCap } from "react-icons/hi2";
+import CertificateCard from "./CertificateCard";
 
 const Education = () => {
   return (
