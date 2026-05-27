@@ -46,9 +46,9 @@ export const ProjectData: Project[] = [
     whatILearned:
       "How to connect a Next.js frontend with a Python/FastAPI backend across different runtimes and how a trained classifier actually turns input features into a real prediction with confidence.",
     futurePlans: [
-      "Allow users to retake the assessment over time and track how their habits shift",
       "Add a personalized progress tracker showing improvement or decline across sessions",
-      "Introduce a comparison view showing how a user's lifestyle stacks up against the healthiest profiles in the dataset.",]
+      "Introduce a comparison view showing how a user's lifestyle stacks up against the healthiest profiles in the dataset.",
+      "Enable users to export their results and prediction history as a downloadable PDF report",]
   },
   {
     id: 2,
@@ -73,6 +73,7 @@ export const ProjectData: Project[] = [
       "CSS",
       "TypeScript",
       "PostgreSQL",
+      "Socket.io",
       "NextAuth",
       "Tan Stack Query",
       "Stripe",
@@ -85,7 +86,7 @@ export const ProjectData: Project[] = [
     futurePlans: [
       "Add order tracking system (Processing → Shipped → Delivered)",
       "Pin delivery location during checkout using maps",
-      "Live chat system for instant customer support.",
+      "Add typing indicators and persist chat history across sessions",
     ]
   },
   {
