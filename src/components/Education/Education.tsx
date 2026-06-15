@@ -2,6 +2,7 @@
 import AnimateOnView from "@/hooks/AnimateOnView";
 import { HiAcademicCap } from "react-icons/hi2";
 import WebProgrammingCertificate from "./Certificates/WebProgrammingCertificate";
+import IntroToMlCertificate from "./Certificates/IntroToMlCertificate";
 
 const Education = () => {
   return (
@@ -39,7 +40,8 @@ const Education = () => {
             </div>
           </div>
 
-          {/* Certificate */}
+          {/* Certificates */}
+          {/* web programming certificate */}
           <div className="bg-gray-800 rounded-xl flex flex-col">
             <WebProgrammingCertificate 
               title="Complete Web Development Course"
@@ -47,6 +49,17 @@ const Education = () => {
               details="I completed this course, which focused on modern web development. It helped me strengthen my coding skills while gaining practical experience through structured projects and guided learning."
               year="2025"
               link="https://drive.google.com/file/d/1JxLSK5BKnyFT4ZJWJYVbOyvec9f61bNf/view?usp=sharing"
+            />
+          </div>
+
+          {/* Intro to ML certificate */}
+          <div className="bg-gray-800 rounded-xl flex flex-col">
+            <IntroToMlCertificate
+              title="Intro To Machine Learning" 
+              platform="Kaggle"
+              details="I completed this course on Kaggle, which covered the fundamentals of machine learning like decision trees, random forests and model validation, by practicing on real datasets through guided projects."
+              year="2026"
+              link="https://drive.google.com/file/d/1wccwoxC5W5gDaKjpJTqUldOZTfM2VoGN/view?usp=sharing"
             />
           </div>
         </div>
