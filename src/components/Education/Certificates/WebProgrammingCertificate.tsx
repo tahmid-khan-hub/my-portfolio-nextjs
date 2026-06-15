@@ -1,7 +1,7 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdWorkspacePremium } from "react-icons/md";
 
-const CertificateCard = ({
+const WebProgrammingCertificate = ({
   title,
   platform,
   year,
@@ -36,4 +36,4 @@ const CertificateCard = ({
   );
 };
 
-export default CertificateCard;
+export default WebProgrammingCertificate;

@@ -1,7 +1,7 @@
 "use client";
 import AnimateOnView from "@/hooks/AnimateOnView";
 import { HiAcademicCap } from "react-icons/hi2";
-import CertificateCard from "./CertificateCard";
+import WebProgrammingCertificate from "./Certificates/WebProgrammingCertificate";
 
 const Education = () => {
   return (
@@ -41,7 +41,7 @@ const Education = () => {
 
           {/* Certificate */}
           <div className="bg-gray-800 rounded-xl flex flex-col">
-            <CertificateCard
+            <WebProgrammingCertificate 
               title="Complete Web Development Course"
               platform="Programming Hero"
               details="I completed this course, which focused on modern web development. It helped me strengthen my coding skills while gaining practical experience through structured projects and guided learning."
