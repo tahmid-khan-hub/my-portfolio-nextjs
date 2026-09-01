@@ -22,13 +22,13 @@ export function BannerLeftSideContent() {
       {/* Type Animation */}
       <TypeAnimation
         sequence={[
+          "A Student",
+          2000,
           "A Web Developer",
           2000,
-          "A Problem Solver",
+          "A Competitive Programmer",
           2000,
-          "A Tech Enthusiast",
-          2000,
-          "An Aspiring Engineer",
+          "A Software Engineer in the Making",
           2000,
         ]}
         wrapper="span" speed={50} repeat={Infinity}
@@ -45,12 +45,13 @@ export function BannerLeftSideContent() {
         <AnimateOnView direction="left" delay={0.1} duration={0.6}>
           <p className="text-gray-300 mb-6 max-w-xl">
             I also compete in competitive programming on Codeforces (Pupil, 1200+) and CodeChef (3 stars).
-            Recently I explored machine learning by training a Random Forest classifier on a real dataset and integrating it into a full-stack web application.
+            Recently built a reinforcement learning project where an agent learns to rescue survivors from a wildfire-affected grid.
+            Currently, I&apos;m working on Porikors — a full-stack web application for course management.
           </p>
         </AnimateOnView>
         <AnimateOnView direction="left" delay={0.1} duration={1.2}>
           <p className="text-gray-300 mb-6 max-w-xl">
-            My goal is to become a software engineer, exploring Prisma, Socket.io and building web applications.
+            My aim is to become a software engineer while sharpening my fundamentals in core CS concepts.
           </p>
         </AnimateOnView>
       </div>
