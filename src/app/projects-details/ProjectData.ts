@@ -91,6 +91,43 @@ export const ProjectData: Project[] = [
   },
   {
     id: 3,
+    title: "Porikors",
+    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1788277193/Screenshot_2026-09-01_213837_p3wu0c.png",
+    description:
+      "Porikors is a full-stack course management platform where teachers create courses, manage grades, share resources, and assign tasks — while students join via a course code to submit work and track their progress. Built as a single Next.js codebase with three roles (Teacher, Student, Admin), each gated behind an approval pipeline and route-level middleware.",
+    features: [
+      "Role-based dashboards for Teacher, Student, and Admin with live stats and deadline tracking",
+      "Course creation with auto-generated, collision-safe join codes",
+      "Grades table with inline editing and optimistic locking, broken down per assessment component",
+      "Task and assignment system with deadlines, file-type restrictions, and resubmission requests",
+      "Resource sharing (notes, videos, slides) scoped globally or per-course",
+      "Announcements posted globally or to a specific course",
+      "Admin verification queue for approving or rejecting teacher and student signups",
+      "Two-layered authorization — middleware for route access, plus server-side ownership checks on every mutation",
+    ],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "NextAuth.js",
+      "TanStack Query",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Framer Motion",
+      "Cloudinary",
+    ],
+    challenges:
+      "Every feature in Porikors follows the same layered pipeline: schema, types, Route Handler, fetcher, Server Action, client component, presentational component, page. Enforcing that consistency across a growing number of features — grades, tasks, resources, announcements, submissions — meant constantly resisting the shortcut of skipping a layer, since one shortcut early on made every later feature harder to keep consistent.",
+    whatILearned:
+      "I learned that architectural discipline matters more as a project grows, not less. A layered structure feels like overhead on the first feature, but it's what kept the fifth and sixth features (submissions, grading, admin verification) from turning into a tangle of inconsistent patterns. It also taught me to think about maintainability for a future version of myself, not just for getting a feature working today.",
+    futurePlans: [
+      "Build out a proper grade system table with per-assessment-component breakdown",
+      "Real-time announcements via WebSocket/pub-sub instead of polling",
+      "Auto-graded code submissions with sandboxed test-case execution",
+    ]
+  },
+  {
+    id: 4,
     title: "ThreadQube",
     image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540010/Screenshot_2026-01-28_005220_jwd5vn.png",
     description:
@@ -128,7 +165,7 @@ export const ProjectData: Project[] = [
       "Real-time notifications for comments and likes",]
   },
   {
-    id: 4,
+    id: 5,
     title: "NexUScore",
     image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540209/Screenshot_2026-01-28_005625_fxzogq.png",
     description:

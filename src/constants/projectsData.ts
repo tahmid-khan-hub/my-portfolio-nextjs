@@ -33,6 +33,26 @@ export const projectData: ProjectData[] = [
   },
   {
     id: 3,
+    title: "Porikors",
+    image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1788277193/Screenshot_2026-09-01_213837_p3wu0c.png",
+    description:
+      "Porikors is a full-stack course management platform where teachers manage courses, grades, and assignments, and students join via a course code to submit work and track their progress. Built with role-based dashboards for teachers, students, and admins.",
+    url: "https://porikors.vercel.app",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "NextAuth.js",
+      "TanStack Query",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Framer Motion",
+      "Cloudinary",
+    ],
+    gitHub_client: "https://github.com/tahmid-khan-hub/Porikors",
+  },
+  {
+    id: 4,
     title: "ThreadQube",
     image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540010/Screenshot_2026-01-28_005220_jwd5vn.png",
     description:
@@ -56,7 +76,7 @@ export const projectData: ProjectData[] = [
     gitHub_server: "https://github.com/tahmid-khan-hub/Thread-Qube-Server",
   },
   {
-    id: 4,
+    id: 5,
     title: "NexUScore",
     image: "https://res.cloudinary.com/ddsy9qaaj/image/upload/v1769540209/Screenshot_2026-01-28_005625_fxzogq.png",
     description:
