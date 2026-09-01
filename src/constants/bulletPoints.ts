@@ -17,8 +17,4 @@ export const bulletPoints: BulletPoints[] = [
         id: 3,
         text: "Developing problem-solving skills through programming contests and challenges"
     },
-    {
-        id: 4,
-        text: "Exploring new technologies like Prisma, Socket.io and Python"
-    },
 ]
