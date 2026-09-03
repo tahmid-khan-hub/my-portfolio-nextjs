@@ -8,15 +8,19 @@ const About = () => {
     <section className="w-full flex justify-center py-20 pb-24 mb-24 px-4 md:px-3">
       <div className="max-w-332.5 w-full flex flex-col md:flex-row items-center justify-between">
         {/* Image */}
-        <AnimateOnView direction="left" delay={0.8} duration={1}><div className="flex justify-center md:justify-start shrink-0 ">
-          <Image
-            src="/my-photo.png" 
-            alt="About Me"
-            width={230}
-            height={230}
-            className="rounded-2xl object-cover shadow-lg"
-          />
-        </div></AnimateOnView>
+        <AnimateOnView direction="left" delay={0.8} duration={1}>
+          <div className="flex justify-center md:justify-start shrink-0">
+            <div className="relative w-64 h-64 lg:w-72 lg:h-72 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/my-photo.png"
+                alt="About Me"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 288px, (min-width: 768px) 256px, 160px"
+              />
+            </div>
+          </div>
+        </AnimateOnView>
 
         {/* Text */}
         <div className="space-y-4 max-w-225 ml-0 md:ml-7 ">
