@@ -22,13 +22,9 @@ export function BannerLeftSideContent() {
       {/* Type Animation */}
       <TypeAnimation
         sequence={[
-          "A Student",
+          "A CSE Student",
           2000,
           "A Web Developer",
-          2000,
-          "A Competitive Programmer",
-          2000,
-          "A Software Engineer in the Making",
           2000,
         ]}
         wrapper="span" speed={50} repeat={Infinity}
@@ -39,19 +35,19 @@ export function BannerLeftSideContent() {
       <div>
         <AnimateOnView direction="left" delay={0.1} duration={0.6}>
           <p className="text-gray-300 mb-6 max-w-xl">
-            I’m a university student who builds responsive and user-friendly websites using modern web technologies.
+            I’m a fourth-year CSE student at Metropolitan University. I’ve built full-stack web apps with Next.js, TypeScript and PostgreSQL.
           </p>
         </AnimateOnView>
         <AnimateOnView direction="left" delay={0.1} duration={0.6}>
           <p className="text-gray-300 mb-6 max-w-xl">
-            I also compete in competitive programming on Codeforces (Pupil, 1200+) and CodeChef (3 stars).
-            Recently built a reinforcement learning project where an agent learns to rescue survivors from a wildfire-affected grid.
-            Currently, I&apos;m working on Porikors — a full-stack web application for course management.
+            Right now I’m working on two projects. Coveso lets you control your computer with hand gestures and voice commands.
+            The other is a compiler for a small part of C, written in Python.
+            I also did competitive programming for a while and reached Pupil (1200+) on Codeforces and 3 stars on CodeChef.
           </p>
         </AnimateOnView>
         <AnimateOnView direction="left" delay={0.1} duration={1.2}>
           <p className="text-gray-300 mb-6 max-w-xl">
-            My aim is to become a software engineer while sharpening my fundamentals in core CS concepts.
+            I’m still figuring out what I want to do next. For now, I learn by building things.
           </p>
         </AnimateOnView>
       </div>
