@@ -30,27 +30,33 @@ const About = () => {
 
           {/* 1 */}
           <AnimateOnView direction="left" delay={0.25} duration={0.6}><p className="text-gray-300 leading-relaxed ">
-             I&apos;m a <span className="font-bold">Web developer</span> who builds things on the web and keeps figuring out how everything connects.
+            I&apos;m a <span className="font-bold">CSE student</span> and a{" "}
+            <span className="font-bold">web developer</span>. I build websites and web apps using{" "}
+            <span className="font-bold">Next.js</span>,{" "}
+            <span className="font-bold">TypeScript</span> and{" "}
+            <span className="font-bold">PostgreSQL</span>.
           </p></AnimateOnView>
 
           {/* 2 */}
           <AnimateOnView direction="right" delay={0.25} duration={0.6}><p className="text-gray-300 leading-relaxed ">
-            Currently, I&apos;m pursuing a degree in{" "}
-            <span className="font-bold">Computer Science & Engineering</span> 
-            at <span className="font-bold">Metropolitan University</span>, 
-            located in Sylhet, Bangladesh.
+            I&apos;m in my fourth year of{" "}
+            <span className="font-bold">Computer Science & Engineering</span> at{" "}
+            <span className="font-bold">Metropolitan University</span> in Sylhet, Bangladesh.
           </p></AnimateOnView>
 
           {/* 3 */}
           <AnimateOnView direction="left" delay={0.25} duration={0.6}><p className="text-gray-300 leading-relaxed ">
-           I do <span className="font-bold">competitive programming</span> on Codeforces and CodeChef and continuously expand my knowledge in both frontend and backend technologies.
-           With every project I learn something new, explore better ways to write <span className="font-bold">clean code</span> and <span className="font-bold">design interfaces</span> that are easy to use. I also use <span className="font-bold">AI tools</span> deliberately to make my workflow more productive, not as a shortcut but as a way to move faster and think better.
+            I used to do <span className="font-bold">competitive programming</span> on Codeforces and CodeChef.
+            These days I spend most of my time on projects. Right now I&apos;m working on{" "}
+            <span className="font-bold">Coveso</span>, which lets you control a computer with hand gestures and voice, and a{" "}
+            <span className="font-bold">C compiler</span> written in Python.
+            I use <span className="font-bold">AI tools</span> to work faster, but I make sure I understand the code I write.
           </p></AnimateOnView>
 
           {/* journey glimpse */}
           <p className="text-gray-300 leading-relaxed mt-12 md:mt-5 font-semibold">
             Some highlights of my journey so far:
-          </p> 
+          </p>
 
           {/* bullet points */}
           <ul className="list-disc pl-6 space-y-2 text-gray-400 ">
